@@ -1526,10 +1526,6 @@ input, select, textarea {
 	form input[type=password],
 	form select,
 	form textarea {
-		-moz-transition: background .2s ease-in-out, box-shadow .2s ease-in-out;
-		-webkit-transition: background .2s ease-in-out, box-shadow .2s ease-in-out;
-		-ms-transition: background .2s ease-in-out, box-shadow .2s ease-in-out;
-		transition: background .2s ease-in-out, box-shadow .2s ease-in-out;
 		-webkit-appearance: none;
 		display: block;
 		border: 0;
@@ -2473,17 +2469,12 @@ input, select, textarea {
 	}
 	
 	.weather-card {
-		background-color: rgb(93, 197, 248);
-		border-radius: 20px;
-		padding: 20px;
-		box-shadow: 0 0 30px rgb(0, 0, 0);
-		transition: transform 0.3s ease-in-out;
-		width: 380px;
+		background-color: rgb(93, 173, 248);
+		border-radius: 10px;
+		padding: 10px;
+		box-shadow: 0 0 10px rgb(0, 0, 0);
+		width: 330px;
 		
-	}
-	
-	.weather-card:hover {
-		transform: scale(1.05);
 	}
 	
 	#city-input {
@@ -2535,7 +2526,7 @@ input, select, textarea {
 	
 	#date {
 		font-size: 18px;
-		color: rgb(220, 75, 75);
+		color: rgb(0, 19, 143);
 	}
 
 	/* Weather End */
