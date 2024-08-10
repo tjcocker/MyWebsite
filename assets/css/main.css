@@ -2474,9 +2474,9 @@ input, select, textarea {
 	
 	.weather-card {
 		background-color: rgb(93, 197, 248);
-		border-radius: 20px;
-		padding: 20px;
-		box-shadow: 0 0 30px rgb(0, 0, 0);
+		border-radius: 10px;
+		padding: 10px;
+		box-shadow: 0 0 10px rgb(0, 0, 0);
 		transition: transform 0.3s ease-in-out;
 		width: 380px;
 		
@@ -2535,7 +2535,7 @@ input, select, textarea {
 	
 	#date {
 		font-size: 18px;
-		color: rgb(220, 75, 75);
+		color: rgb(20, 1, 143);
 	}
 
 	/* Weather End */
