@@ -2,6 +2,7 @@ const url =
 	'https://api.openweathermap.org/data/2.5/weather';
 const apiKey =
 	'7599b9f74b54d18592f643b684f1a06d';
+// This is a free API key with request limits. Not really worried about having it visible, or in my public repo on GitHub.
 
 $(document).ready(function () {
 	weatherFn('Denver');
