@@ -18,7 +18,8 @@ body {
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: center; /* Center the game content */
+  text-align: center;
+  /* Center the game content */
 }
 
 #choices button {
@@ -48,7 +49,8 @@ body {
   font-size: 20px;
 }
 
-#player-score, #computer-score {
+#player-score,
+#computer-score {
   margin: 10px;
 }
 
@@ -61,4 +63,3 @@ body {
   font-size: 20px;
   margin: 10px 0;
 }
-

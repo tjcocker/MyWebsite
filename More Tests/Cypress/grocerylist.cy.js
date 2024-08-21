@@ -5,7 +5,7 @@ describe('Grocery list app tests', () => {
     cy.visit('/grocery.html')
   })
 
-    it('URL contains grocery', () => {
+  it('URL contains grocery', () => {
     cy.url().should('include', '/grocery')
   })
 
@@ -14,7 +14,7 @@ describe('Grocery list app tests', () => {
   })
 
   it('Contains submit button', () => {
-  cy.get('button').should('contain', 'submit')
+    cy.get('button').should('contain', 'submit')
   })
 
   it('Contains home button', () => {
@@ -29,7 +29,7 @@ describe('Grocery list app tests', () => {
     cy.get('article').should('not.exist')
   })
 
-it('Clicks home button', () => {
-  cy.contains('Return to Main Site').click()
-})
+  it('Clicks home button', () => {
+    cy.contains('Return to Main Site').click()
+  })
 })

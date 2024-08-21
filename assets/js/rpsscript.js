@@ -13,7 +13,7 @@ const playerScoreDisplay = document.getElementById('player-score');
 const computerScoreDisplay = document.getElementById('computer-score');
 
 let currentRound = 1;
-const totalRounds = 5; // You can adjust this number based on how long you want the game to be
+const totalRounds = 5;
 const roundDisplay = document.getElementById('round');
 
 function playRound(playerChoice) {
@@ -44,7 +44,7 @@ function playRound(playerChoice) {
         computerScoreDisplay.textContent = `Computer Score: ${computerScore}`;
 
     }
-    
+
     if (currentRound > totalRounds) {
         concludeGame();
     }
