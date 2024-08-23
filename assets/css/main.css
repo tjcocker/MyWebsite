@@ -2571,18 +2571,18 @@ body>article {
 	background: linear-gradient(135deg, #102063, #87a3ff);
 
 	border-radius: 10px;
-	box-shadow: 0 10px 20px rgb(0, 0, 0);
+	box-shadow: 0 10px 10px rgb(0, 0, 0);
 	text-align: center;
 }
 
 #timer {
-	font-size: 2.5rem;
+	font-size: 2.0rem;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	letter-spacing: 3px;
 }
 
 .timer-unit {
-	font-size: 1.2rem;
+	font-size: 1.8rem;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	display: block;
