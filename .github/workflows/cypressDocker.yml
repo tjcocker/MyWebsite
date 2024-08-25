@@ -9,7 +9,7 @@ jobs:
           - name: Checkout
             uses: actions/checkout@v4
     
-          - name: Cypress ci
+          - name: Cypress install
             uses: cypress-io/github-action@v6
             with:
               runTests: false
@@ -41,3 +41,6 @@ jobs:
             with:
               start: npm start
               browser: chrome
+          - run:
+            env:
+                CI: false
