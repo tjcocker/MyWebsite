@@ -1,42 +1,19 @@
-name: Cypress Docker Test
+name: Cypress Tests using Cypress Docker Image
 
 on: push
 
 jobs:
-      install:
-        runs-on: ubuntu-22.04
-        steps:
-          - name: Checkout
-            uses: actions/checkout@v4
-    
-          - name: Cypress install
-            uses: cypress-io/github-action@v6
-            with:
-              build: npm run build
-    
-          - name: Save build folder
-            uses: actions/upload-artifact@v4
-            with:
-              name: build
-              if-no-files-found: error
-              path: build
-    
-      cypress-run:
-        timeout-minutes: 10
-        runs-on: ubuntu-22.04
-        needs: install
-        steps:
-          - name: Checkout
-            uses: actions/checkout@v4
-    
-          - name: Download the build folder
-            uses: actions/download-artifact@v4
-            with:
-              name: build
-              path: build
-    
-          - name: Cypress run
-            uses: cypress-io/github-action@v6
-            with:
-              start: npm start
-              browser: chrome
+  cypress-run:
+    runs-on: ubuntu-22.04
+    container:
+      image: cypress/browsers:node-20.14.0-chrome-126.0.6478.114-1-ff-127.0.1-edge-126.0.2592.61-1
+      options: --user 1001
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Cypress run
+        uses: cypress-io/github-action@v6
+        with:
+          build: npm run build
+          start: npm start
+          browser: chrome
