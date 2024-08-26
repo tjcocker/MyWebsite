@@ -4,7 +4,7 @@ test('test', async ({ page }) => {
   await page.goto('http://tim-cockerham.com/');
   await expect(page.getByRole('img', { name: 'me and my dog Tony' })).toBeVisible();
   await expect(page.locator('i')).toContainText('This is a work in progress');
-  await expect(page.locator('body')).toContainText('Tests');
+  await expect(page.locator('body')).toContainText('Testing');
   await page.getByPlaceholder('Enter city name').click();
   await page.getByPlaceholder('Enter city name').fill('Westminster');
   await page.getByRole('button', { name: 'Get Weather' }).click();
