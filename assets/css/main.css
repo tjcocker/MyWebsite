@@ -2157,6 +2157,8 @@ ul.actions li:first-child {
 	cursor: default;
 	height: 3.5em;
 	line-height: 3.5em;
+	overflow: auto;
+    white-space: nowrap;
 }
 
 #nav ul {
