@@ -17,6 +17,6 @@ test('test', async ({ page }) => {
   await expect(page.getByRole('article')).toContainText('Milk');
   await page.getByRole('button', { name: 'clear items' }).click();
   await page.getByRole('link', { name: 'Return to Main Site' }).click();
-  await expect(page.locator('h1')).toContainText('Hi, welcome to my site');
+  await expect(page.locator('h1')).toContainText('Welcome to my Website');
   await expect(page.getByRole('strong')).toContainText('Email Me');
 });
