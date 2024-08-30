@@ -3,7 +3,7 @@ import { test, expect } from '@playwright/test';
 test('test', async ({ page }) => {
   await page.goto('http://tim-cockerham.com/');
   await expect(page.getByRole('img', { name: 'me and my dog Tony' })).toBeVisible();
-  await expect(page.locator('i')).toContainText('This is a work in progress');
+  await expect(page.locator('i')).toContainText('This is a Work in Progress');
   await expect(page.locator('body')).toContainText('Testing');
   await page.getByPlaceholder('Enter city name').click();
   await page.getByPlaceholder('Enter city name').fill('Westminster');
@@ -17,6 +17,6 @@ test('test', async ({ page }) => {
   await expect(page.getByRole('article')).toContainText('Milk');
   await page.getByRole('button', { name: 'clear items' }).click();
   await page.getByRole('link', { name: 'Return to Main Site' }).click();
-  await expect(page.locator('h1')).toContainText('Hi, welcome to my site');
+  await expect(page.locator('h1')).toContainText('Welcome to my Website');
   await expect(page.getByRole('strong')).toContainText('Email Me');
 });
