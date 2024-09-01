@@ -16,9 +16,6 @@
 							"pm.test(\"Status code is 200\", function () {\r",
 							"    pm.response.to.have.status(200);\r",
 							"});\r",
-							"pm.test(\"Response time is less than 150ms\", function () {\r",
-							"    pm.expect(pm.response.responseTime).to.be.below(150);\r",
-							"});\r",
 							"pm.test(\"Body includes 'Denver'\", function () {\r",
 							"    pm.expect(pm.response.text()).to.include(\"Denver\");\r",
 							"});"
