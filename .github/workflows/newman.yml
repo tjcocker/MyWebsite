@@ -1,0 +1,20 @@
+name: Postman Newman Test
+
+on: push
+
+jobs:
+  postman-newman-action:
+    name: GitHub Actions Test
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        id: checkout
+        uses: actions/checkout@v4
+
+      - name: Run Postman collection
+        id: postman-newman-action
+        uses: SimonScholz/postman-newman-action@main
+        with:
+          collection: "./TestFiles/Other/WeatherAPI.postman_collection.json"
+          outputGoogleCardV2: true
