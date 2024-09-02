@@ -1,4 +1,4 @@
-name: k6 Browser Test
+name: k6 - Browser
 
 on: push
   
