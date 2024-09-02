@@ -1,4 +1,4 @@
-name: Cypress Tests - Docker Image
+name: Cypress Tests - Docker Container
 
 on: push
 
