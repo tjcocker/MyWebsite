@@ -1,0 +1,15 @@
+name: Health Check
+
+on: push
+
+jobs:
+  health_check_job:
+    runs-on: ubuntu-latest
+    name: Check for status 200 and title text "Tim Cockerham"
+    steps:
+      - uses: actions/checkout@v2
+      - id: test
+        uses: johnlokerse/website-healthcheck@v2
+        with:
+          web-url: "https://www.tim-cockerham.com"
+          scan-for-text: "Tim Cockerham"
