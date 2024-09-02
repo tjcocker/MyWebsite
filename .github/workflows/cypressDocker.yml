@@ -1,4 +1,4 @@
-name: Cypress Tests - Docker Container
+name: Cypress - Docker Container
 
 on: push
 

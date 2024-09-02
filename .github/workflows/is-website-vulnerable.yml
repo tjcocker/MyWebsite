@@ -1,4 +1,4 @@
-name: JavaScript vulnerabilities test
+name: JavaScript Vulnerabilities Test
 
 on: push
 jobs:
