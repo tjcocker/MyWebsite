@@ -1,0 +1,233 @@
+{
+  "id": "aec0d567-27ff-4165-96ee-1a28444c95f9",
+  "version": "2.0",
+  "name": "Website Smoke Test",
+  "url": "https://tim-cockerham.com/",
+  "tests": [{
+    "id": "d57ab36e-ad18-4e09-8fe0-7ed2f5cb240b",
+    "name": "Smoke Test",
+    "commands": [{
+      "id": "bf3610ba-d0e6-4a5c-a939-aa57f7b2ea0d",
+      "comment": "",
+      "command": "open",
+      "target": "https://tim-cockerham.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c9e9dbfe-530d-4a6e-bf2e-82ec511c1fce",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1730x927",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8e82f52f-b56a-4b0b-af1a-e1ff98448563",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=Home",
+      "targets": [
+        ["linkText=Home", "linkText"],
+        ["css=.container > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Home')]", "xpath:link"],
+        ["xpath=//nav[@id='nav']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#top')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Home')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5ca31b9f-0cdc-473e-97df-c7be0c46c5ab",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//article[@id='top']/div/div/div[2]/header/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Welcome to my Website')]", "xpath:innerText"]
+      ],
+      "value": "Welcome to my Website"
+    }, {
+      "id": "ebd78cbc-6799-4478-bad0-c8a609204954",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Testing Tools",
+      "targets": [
+        ["linkText=Testing Tools", "linkText"],
+        ["css=.container > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Testing Tools')]", "xpath:link"],
+        ["xpath=//nav[@id='nav']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#testingtools')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Testing Tools')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3802bae3-39fa-4020-a25b-f5192a523e3c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=JavaScript",
+      "targets": [
+        ["linkText=JavaScript", "linkText"],
+        ["css=li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'JavaScript')]", "xpath:link"],
+        ["xpath=//nav[@id='nav']/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#JavaScript')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'JavaScript')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "917f72c1-57d2-46d0-9b35-c896e9807bd4",
+      "comment": "",
+      "command": "click",
+      "target": "css=#JavaScript .col-4:nth-child(2) img",
+      "targets": [
+        ["css=#JavaScript .col-4:nth-child(2) img", "css:finder"],
+        ["xpath=//article[@id='JavaScript']/div/div/div[2]/article/a/img", "xpath:idRelative"],
+        ["xpath=//div[2]/article/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d7d6a92f-219c-4516-ae93-71c54600c9c4",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h3",
+      "targets": [
+        ["css=h3", "css:finder"],
+        ["xpath=//h3", "xpath:position"]
+      ],
+      "value": "Grocery List"
+    }, {
+      "id": "cb986843-3ad3-45a9-a699-ebc986aa409f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Return to Main Site",
+      "targets": [
+        ["linkText=Return to Main Site", "linkText"],
+        ["css=a", "css:finder"],
+        ["xpath=//a[contains(text(),'Return to Main Site')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'index.html')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Return to Main Site')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f58b0451-54d0-437c-accb-e0b229225fa7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=JavaScript",
+      "targets": [
+        ["linkText=JavaScript", "linkText"],
+        ["css=li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'JavaScript')]", "xpath:link"],
+        ["xpath=//nav[@id='nav']/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#JavaScript')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'JavaScript')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cb8f796e-a377-4f6a-a67f-1901a7c013bd",
+      "comment": "",
+      "command": "click",
+      "target": "css=#JavaScript .col-4:nth-child(4) img",
+      "targets": [
+        ["css=#JavaScript .col-4:nth-child(4) img", "css:finder"],
+        ["xpath=//article[@id='JavaScript']/div/div/div[4]/article/a/img", "xpath:idRelative"],
+        ["xpath=//div[4]/article/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a38f527c-a405-437a-9cda-3ee489c34248",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//div[@id='rps-game']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Rock-Paper-Scissors')]", "xpath:innerText"]
+      ],
+      "value": "Rock-Paper-Scissors"
+    }, {
+      "id": "03aafced-ce2e-427e-8da9-ccaba97d2b44",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Return to Main Site",
+      "targets": [
+        ["linkText=Return to Main Site", "linkText"],
+        ["css=a", "css:finder"],
+        ["xpath=//a[contains(text(),'Return to Main Site')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'index.html')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Return to Main Site')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "640e9d41-d332-438d-b6ed-4756085108f1",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Contact",
+      "targets": [
+        ["linkText=Contact", "linkText"],
+        ["css=li:nth-child(7) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Contact')]", "xpath:link"],
+        ["xpath=//nav[@id='nav']/ul/li[7]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#contact')]", "xpath:href"],
+        ["xpath=//li[7]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Contact')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "76f02712-736c-488c-b663-84e504542362",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "linkText=Email Me",
+      "targets": [
+        ["linkText=Email Me", "linkText"],
+        ["css=strong > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Email Me')]", "xpath:link"],
+        ["xpath=//article[@id='contact']/div/div/div/strong/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'mailto:tim@tim-cockerham.com')]", "xpath:href"],
+        ["xpath=//strong/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Email Me')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "41b5df24-84e0-4887-a926-b50893efd088",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.fa-linkedin-in",
+      "targets": [
+        ["css=.fa-linkedin-in", "css:finder"],
+        ["xpath=//article[@id='contact']/div/div/div[2]/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.linkedin.com/in/timcockerham/')]", "xpath:href"],
+        ["xpath=//div[2]/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "01d5213c-b918-428a-9ced-9f2ec49a4caf",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.fa-github",
+      "targets": [
+        ["css=.fa-github", "css:finder"],
+        ["xpath=//article[@id='contact']/div/div/div[2]/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://github.com/tjcocker/MyWebsite')])[2]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "702ffbc2-7d77-4ad4-93e9-165bf2db69d0",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["d57ab36e-ad18-4e09-8fe0-7ed2f5cb240b"]
+  }],
+  "urls": [],
+  "plugins": []
+}
