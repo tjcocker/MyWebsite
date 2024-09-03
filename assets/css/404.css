@@ -121,6 +121,18 @@
 	  margin-bottom: 3rem;
 	}
 
+	h2 {
+		animation: animate 3s linear infinite;
+		perspective: 800px;
+	}
+	@keyframes animate {
+	0%{
+	   transform: rotateY(0deg);
+	}
+	100%{
+		transform: rotateY(360deg);
+	}
+	}
 	@-webkit-keyframes swing {
 	  0% {
 	    --swing-x: -100;
