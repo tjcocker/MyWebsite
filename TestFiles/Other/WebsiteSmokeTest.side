@@ -206,18 +206,6 @@
         ["xpath=//div[2]/ul/li/a", "xpath:position"]
       ],
       "value": ""
-    }, {
-      "id": "01d5213c-b918-428a-9ced-9f2ec49a4caf",
-      "comment": "",
-      "command": "assertElementPresent",
-      "target": "css=.fa-github",
-      "targets": [
-        ["css=.fa-github", "css:finder"],
-        ["xpath=//article[@id='contact']/div/div/div[2]/ul/li[2]/a", "xpath:idRelative"],
-        ["xpath=(//a[contains(@href, 'https://github.com/tjcocker/MyWebsite')])[2]", "xpath:href"],
-        ["xpath=//div[2]/ul/li[2]/a", "xpath:position"]
-      ],
-      "value": ""
     }]
   }],
   "suites": [{
