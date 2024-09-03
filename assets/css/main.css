@@ -1932,6 +1932,18 @@ ul.social li a.fa-linkedin-in {
 
 ul.social li a.fa-github {
 	background-color: #FAFAFA;
+	animation: animate 5s linear infinite;
+	perspective: 800px;
+}
+
+@keyframes animate {
+	0% {
+		transform: rotateY(0deg);
+	}
+
+	100% {
+		transform: rotateY(360deg);
+	}
 
 }
 
