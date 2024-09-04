@@ -1,8 +1,8 @@
 Hello,
 
-This repo is for tracking changes to my website. The purpose of the website is for learning and expanding my knowledge of new testing tools, languages, CI/CD, etc.
+This repo is for tracking changes to my website. The purpose of the website is for a portfolio of tools I've used, plus learning and expanding my knowledge of new testing tools, languages, etc. See the Actions tab above for tests running on every push.
 
-My main goal is to get as many examples of the tools I'm learning, or already familiar with on the website as quickly as possible, instead of building out larger tests with just a few tools.
+My main goal is to get as many examples on the website as quickly as possible, instead of building out larger tests with just a few tools. A sort of agile development process. Later I'll go back and improve/expand on tests.
 
 This is a work in progress. Please feel free to suggest any changes or additions. 
 
