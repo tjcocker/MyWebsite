@@ -51,7 +51,7 @@
       "id": "ebd78cbc-6799-4478-bad0-c8a609204954",
       "comment": "",
       "command": "click",
-      "target": "linkText=Testing Tools",
+      "target": "linkText=Testing",
       "targets": [
         ["linkText=Testing Tools", "linkText"],
         ["css=.container > li:nth-child(2) > a", "css:finder"],
@@ -216,6 +216,6 @@
     "timeout": 300,
     "tests": ["d57ab36e-ad18-4e09-8fe0-7ed2f5cb240b"]
   }],
-  "urls": [],
+  "urls": ["https://tim-cockerham.com/"],
   "plugins": []
 }
