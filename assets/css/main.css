@@ -2622,9 +2622,9 @@ body>article {
 /* Button Animation */
 
 .img2 {
-	--g: 5px;
+	--g: 2px;
 	/* the gap */
-	--b: 2px;
+	--b: 3px;
 	/* border thickness*/
 	--c: #2280c8;
 	/* the color */
