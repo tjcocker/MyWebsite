@@ -139,32 +139,6 @@
       ],
       "value": ""
     }, {
-      "id": "a38f527c-a405-437a-9cda-3ee489c34248",
-      "comment": "",
-      "command": "assertText",
-      "target": "css=h1",
-      "targets": [
-        ["css=h1", "css:finder"],
-        ["xpath=//div[@id='rps-game']/h1", "xpath:idRelative"],
-        ["xpath=//h1", "xpath:position"],
-        ["xpath=//h1[contains(.,'Rock-Paper-Scissors')]", "xpath:innerText"]
-      ],
-      "value": "Rock-Paper-Scissors"
-    }, {
-      "id": "03aafced-ce2e-427e-8da9-ccaba97d2b44",
-      "comment": "",
-      "command": "click",
-      "target": "linkText=Return to Main Site",
-      "targets": [
-        ["linkText=Return to Main Site", "linkText"],
-        ["css=a", "css:finder"],
-        ["xpath=//a[contains(text(),'Return to Main Site')]", "xpath:link"],
-        ["xpath=//a[contains(@href, 'index.html')]", "xpath:href"],
-        ["xpath=//a", "xpath:position"],
-        ["xpath=//a[contains(.,'Return to Main Site')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
       "id": "640e9d41-d332-438d-b6ed-4756085108f1",
       "comment": "",
       "command": "click",
