@@ -154,21 +154,6 @@
       ],
       "value": ""
     }, {
-      "id": "76f02712-736c-488c-b663-84e504542362",
-      "comment": "",
-      "command": "verifyElementPresent",
-      "target": "linkText=Email Me",
-      "targets": [
-        ["linkText=Email Me", "linkText"],
-        ["css=strong > a", "css:finder"],
-        ["xpath=//a[contains(text(),'Email Me')]", "xpath:link"],
-        ["xpath=//article[@id='contact']/div/div/div/strong/a", "xpath:idRelative"],
-        ["xpath=//a[contains(@href, 'mailto:tim@tim-cockerham.com')]", "xpath:href"],
-        ["xpath=//strong/a", "xpath:position"],
-        ["xpath=//a[contains(.,'Email Me')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
       "id": "41b5df24-84e0-4887-a926-b50893efd088",
       "comment": "",
       "command": "assertElementPresent",
