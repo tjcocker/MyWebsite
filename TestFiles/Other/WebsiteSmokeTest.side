@@ -55,11 +55,11 @@
       "targets": [
         ["linkText=Testing Tools", "linkText"],
         ["css=.container > li:nth-child(2) > a", "css:finder"],
-        ["xpath=//a[contains(text(),'Testing Tools')]", "xpath:link"],
+        ["xpath=//a[contains(text(),'Testing')]", "xpath:link"],
         ["xpath=//nav[@id='nav']/ul/li[2]/a", "xpath:idRelative"],
-        ["xpath=//a[contains(@href, '#testingtools')]", "xpath:href"],
+        ["xpath=//a[contains(@href, '#testing')]", "xpath:href"],
         ["xpath=//li[2]/a", "xpath:position"],
-        ["xpath=//a[contains(.,'Testing Tools')]", "xpath:innerText"]
+        ["xpath=//a[contains(.,'Testing')]", "xpath:innerText"]
       ],
       "value": ""
     }, {
