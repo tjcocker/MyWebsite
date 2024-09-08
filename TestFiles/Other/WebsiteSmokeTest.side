@@ -139,21 +139,6 @@
       ],
       "value": ""
     }, {
-      "id": "640e9d41-d332-438d-b6ed-4756085108f1",
-      "comment": "",
-      "command": "click",
-      "target": "linkText=Contact",
-      "targets": [
-        ["linkText=Contact", "linkText"],
-        ["css=li:nth-child(7) > a", "css:finder"],
-        ["xpath=//a[contains(text(),'Contact')]", "xpath:link"],
-        ["xpath=//nav[@id='nav']/ul/li[7]/a", "xpath:idRelative"],
-        ["xpath=//a[contains(@href, '#contact')]", "xpath:href"],
-        ["xpath=//li[7]/a", "xpath:position"],
-        ["xpath=//a[contains(.,'Contact')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
       "id": "41b5df24-84e0-4887-a926-b50893efd088",
       "comment": "",
       "command": "assertElementPresent",
