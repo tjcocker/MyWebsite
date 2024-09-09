@@ -1,0 +1,15 @@
+name: JMeter
+
+on: push
+
+jobs:
+  action_build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Run JMeter Action on a test
+        uses: rbhadti94/apache-jmeter-action@v0.5.0
+        with:
+          testFilePath: TestFiles/Other/WebsiteTest.jmx
+          outputReportsFolder: TestReports/
