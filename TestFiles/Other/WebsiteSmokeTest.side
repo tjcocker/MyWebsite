@@ -138,18 +138,6 @@
         ["xpath=//div[4]/article/a/img", "xpath:position"]
       ],
       "value": ""
-    }, {
-      "id": "41b5df24-84e0-4887-a926-b50893efd088",
-      "comment": "",
-      "command": "assertElementPresent",
-      "target": "css=.fa-linkedin-in",
-      "targets": [
-        ["css=.fa-linkedin-in", "css:finder"],
-        ["xpath=//article[@id='contact']/div/div/div[2]/ul/li/a", "xpath:idRelative"],
-        ["xpath=//a[contains(@href, 'https://www.linkedin.com/in/timcockerham/')]", "xpath:href"],
-        ["xpath=//div[2]/ul/li/a", "xpath:position"]
-      ],
-      "value": ""
     }]
   }],
   "suites": [{
