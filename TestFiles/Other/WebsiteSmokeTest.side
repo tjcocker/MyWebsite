@@ -44,7 +44,7 @@
         ["css=h1", "css:finder"],
         ["xpath=//article[@id='top']/div/div/div[2]/header/h1", "xpath:idRelative"],
         ["xpath=//h1", "xpath:position"],
-        ["xpath=//h1[contains(.,'Welcome to my Website')]", "xpath:innerText"]
+        ["xpath=//h1[contains(.,'Welcome')]", "xpath:innerText"]
       ],
       "value": "Welcome to my Website"
     }, {

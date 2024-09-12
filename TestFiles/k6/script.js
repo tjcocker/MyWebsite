@@ -26,7 +26,7 @@ export default async function () {
 
     const header = await page.locator('h1').textContent();
     check(header, {
-      header: (h) => h == 'Welcome to my Website',
+      header: (h) => h == 'Welcome',
     });
   } finally {
     await page.close();
