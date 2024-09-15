@@ -46,7 +46,7 @@
         ["xpath=//h1", "xpath:position"],
         ["xpath=//h1[contains(.,'Welcome')]", "xpath:innerText"]
       ],
-      "value": "Welcome to my Website"
+      "value": "Welcome"
     }, {
       "id": "ebd78cbc-6799-4478-bad0-c8a609204954",
       "comment": "",
