@@ -21,7 +21,7 @@ describe('Grocery list app tests', () => {
     cy.get('div').should('contain', 'Return to Main Site')
   })
 
-  it('Enters an item, clears item', () => {
+  it('Enters an item, clears item, asserts item is cleared', () => {
     cy.get('#grocery').type('Milk');
     cy.get('.submit-btn').click();
     cy.get('article').should('contain', 'Milk');

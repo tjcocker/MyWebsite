@@ -2,26 +2,21 @@ import { defineConfig, devices } from '@playwright/test';
 
 export default defineConfig({
   testDir: './tests',
-  /* Run tests in files in parallel */
+  /* Run tests in parallel */
   fullyParallel: true,
-  /* Fail the build on CI if you accidentally left test.only in the source code. */
   forbidOnly: !!process.env.CI,
   /* Retry on CI only */
   retries: process.env.CI ? 2 : 0,
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 1 : undefined,
-  /* Reporter to use. See https://playwright.dev/docs/test-reporters */
+  /* Reporter */
   reporter: 'html',
-  /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
-    /* Base URL to use in actions like `await page.goto('/')`. */
-    // baseURL: 'http://127.0.0.1:3000',
-
-    /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
+    /* Collect trace when retrying the failed test */
     trace: 'on-first-retry',
   },
 
-  /* Configure projects for major browsers */
+  /* Main browsers */
   projects: [
     {
       name: 'chromium',
@@ -33,9 +28,31 @@ export default defineConfig({
       use: { ...devices['Desktop Firefox'] },
     },
 
+    // webkit test keeps timing out on locator.click. https://github.com/microsoft/playwright/issues/29661
+    // {
+    //   name: 'webkit',
+    //   use: { ...devices['Desktop Safari'] },
+    // },
+
+    /* Test against mobile viewports. */
     {
-      name: 'webkit',
-      use: { ...devices['Desktop Safari'] },
+      name: 'Mobile Chrome',
+      use: { ...devices['Pixel 5'] },
+    },
+
+    {
+      name: 'Mobile Safari',
+      use: { ...devices['iPhone 12'] },
+    },
+
+    /* Test against branded browsers. */
+    {
+      name: 'Google Chrome',
+      use: { ...devices['Desktop Chrome'], channel: 'chrome' }, // or 'chrome-beta'
+    },
+    {
+      name: 'Microsoft Edge',
+      use: { ...devices['Desktop Edge'], channel: 'msedge' }, // or 'msedge-dev'
     },
   ],
 });

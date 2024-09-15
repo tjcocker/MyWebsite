@@ -1,7 +1,9 @@
 import { test, expect } from '@playwright/test';
+import { TIMEOUT } from 'dns';
 
 test('test', async ({ page }) => {
   await page.goto('http://tim-cockerham.com/');
+  await expect(page.locator('h1')).toContainText('Welcome');
   await expect(page.getByRole('img', { name: 'me and my dog Tony' })).toBeVisible();
   await expect(page.locator('i')).toContainText('This is a Work in Progress');
   await expect(page.locator('body')).toContainText('Testing');
@@ -16,7 +18,15 @@ test('test', async ({ page }) => {
   await page.getByRole('button', { name: 'submit' }).click();
   await expect(page.getByRole('article')).toContainText('Milk');
   await page.getByRole('button', { name: 'clear items' }).click();
+  await expect(page.getByRole('article')).toBeEmpty;
   await page.getByRole('link', { name: 'Return to Main Site' }).click();
   await expect(page.locator('h1')).toContainText('Welcome');
+  await page.goto('https://tim-cockerham.com/rockpaperscissors.html');
+  await expect(page.getByText('Round: 1 of')).toBeVisible();
+  await page.getByRole('button', { name: 'Rock' }).click();
+  await expect(page.getByText('Round: 1 of')).toBeVisible();
+  await page.getByRole('link', { name: 'Return to Main Site' }).click();
+  await page.getByRole('link', { name: 'Contact' }).click();
   await expect(page.getByRole('strong')).toContainText('Email Me');
 });
+
