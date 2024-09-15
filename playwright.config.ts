@@ -10,14 +10,7 @@ export default defineConfig({
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 1 : undefined,
   /* Reporter */
-  reporter: [
-    ['html', { open: 'never' }],
-  ],
-  use: {
-    /* Collect trace when retrying the failed test */
-    trace: 'on-first-retry',
-  },
-
+  reporter: 'html',
   /* Main browsers */
   projects: [
     {
@@ -30,7 +23,7 @@ export default defineConfig({
       use: { ...devices['Desktop Firefox'] },
     },
 
-    // webkit test keeps timing out on locator.click.  https://github.com/microsoft/playwright/issues/29661
+    // webkit test keeps timing out on locator.click. https://github.com/microsoft/playwright/issues/29661
     // {
     //   name: 'webkit',
     //   use: { ...devices['Desktop Safari'] },
