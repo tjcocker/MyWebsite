@@ -1,4 +1,5 @@
 name: Playwright Parallel Test Sharding
+# Running 4 shards as separate jobs in GitHub Actions
 on:
   push:
     branches: [ main, master ]
