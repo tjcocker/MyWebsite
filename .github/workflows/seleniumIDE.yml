@@ -10,7 +10,7 @@ jobs:
       actions: write
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v3
     - name: Run Website E2E Tests
       uses: Dylan700/selenium-ide-action@latest 
       with: 
