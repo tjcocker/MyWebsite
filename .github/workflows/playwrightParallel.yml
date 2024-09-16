@@ -1,5 +1,5 @@
 name: Playwright Parallel Test Sharding
-# Running 4 shards as separate jobs in GitHub Actions
+# Running 4 test shards as separate jobs in GitHub Actions to increase test speed
 on:
   push:
     branches: [ main, master ]
