@@ -27,6 +27,6 @@ jobs:
          password: '${{secrets.TESTRAILPW}}'
          project: 'Github Actions Tests'
          auto_create_cases_yes: 'true'
-         report_file_path: 'reports/junit-report.xml'
+         report_file_path: 'reports/test-report.xml'
          title: 'Automated Cypress Tests from GitHub'
          run_description: 'GitHub workflow: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}'
