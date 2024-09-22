@@ -11,7 +11,7 @@ module.exports = defineConfig({
     },
     reporter: 'junit',
     reporterOptions: {
-      mochaFile: 'results/test-results.xml',
+      mochaFile: 'reports/test-report.xml',
       outputs: true,
       testCaseSwitchClassnameAndName: true
     }
