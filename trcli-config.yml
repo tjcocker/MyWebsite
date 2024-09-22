@@ -1,5 +1,0 @@
-host: https://timcockerham.testrail.io
-username: tim@tim-cockerham.com
-password: ${{secrets.TESTRAILPW}}
-project: Github Actions Tests
-title: Automated Cypress Tests from GitHub

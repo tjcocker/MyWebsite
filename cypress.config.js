@@ -11,3 +11,13 @@ module.exports = defineConfig({
     },
   },
 });
+
+const { defineConfig } = require('cypress')
+module.exports = defineConfig({
+  reporter: 'junit',
+  reporterOptions: {
+    mochaFile: 'results/test-results.xml',
+    outputs: true,
+    testCaseSwitchClassnameAndName: true
+  }
+})
