@@ -1,0 +1,34 @@
+name: Cypress TestRail
+
+on: push
+
+jobs:
+  cypress-run:
+    timeout-minutes: 10
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Cypress run
+        uses: cypress-io/github-action@v6
+        with:
+            command: npx cypress run --reporter junit --reporter-options mochaFile=reports/TEST-[hash].xml
+            browser: chrome
+      - name: Python setup
+        if: always()
+        uses: actions/setup-python@v3
+        with:
+          python-version: '3.x'
+      - name: TestRail CLI upload results
+        if: always()
+        run: |
+          pip install trcli
+          trcli -y \
+            -h https://timcockerham.testrail.io/ \
+            --project "Github Actions Tests" \
+            -u tim@tim-cockerham.com \
+            -p ${{secrets.TESTRAILPW}} \
+            parse_junit \
+            --title "Automated Cypress Tests from GitHub" \
+            --run-description ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }} \
+            -f "reports/junit*.xml"
