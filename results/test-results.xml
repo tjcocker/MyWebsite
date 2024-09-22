@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="4.864" tests="6" failures="0">
+  <testsuite name="Root Suite" timestamp="2024-09-22T23:09:08" tests="0" file="cypress\e2e\grocerylist.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Grocery list app tests" timestamp="2024-09-22T23:09:08" tests="6" time="4.862" failures="0">
+    <testcase name="URL contains grocery" time="1.504" classname="Grocery list app tests URL contains grocery">
+    </testcase>
+    <testcase name="Contains grocery list title" time="0.153" classname="Grocery list app tests Contains grocery list title">
+    </testcase>
+    <testcase name="Contains submit button" time="0.184" classname="Grocery list app tests Contains submit button">
+    </testcase>
+    <testcase name="Contains home button" time="0.193" classname="Grocery list app tests Contains home button">
+    </testcase>
+    <testcase name="Enters an item, clears item" time="0.528" classname="Grocery list app tests Enters an item, clears item">
+    </testcase>
+    <testcase name="Clicks home button" time="2.131" classname="Grocery list app tests Clicks home button">
+    </testcase>
+  </testsuite>
+</testsuites>
