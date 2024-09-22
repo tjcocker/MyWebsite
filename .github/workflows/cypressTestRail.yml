@@ -19,16 +19,14 @@ jobs:
         uses: actions/setup-python@v3
         with:
           python-version: '3.x'
-      - name: TestRail CLI upload results
-        if: always()
-        run: |
-          pip install trcli
-          trcli -y \
-            -h https://timcockerham.testrail.io/ \
-            --project "Github Actions Tests" \
-            -u tim@tim-cockerham \
-            -p ${{secrets.TESTRAILPW}} \
-            parse_junit \
-            --title "Automated Cypress Tests from GitHub" \
-            --run-description ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }} \
-            -f "reports/junit*.xml"
+      - name: Execute TRCLI Action
+        uses: gurock/trcli-action@main
+        with:
+         host: 'https://timcockerham.testrail.io/'
+         username: 'tim@tim-cockerham.com'
+         password: '${{secrets.TESTRAILPW}}'
+         project: 'Github Actions Tests'
+         auto_create_cases_yes: 'true'
+         report_file_path: 'reports/junit-report.xml'
+         title: 'Automated Cypress Tests from GitHub'
+         run_description: 'GitHub workflow: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}'

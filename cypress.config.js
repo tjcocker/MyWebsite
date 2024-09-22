@@ -9,15 +9,11 @@ module.exports = defineConfig({
       // implement node event listeners here
       
     },
+    reporter: 'junit',
+    reporterOptions: {
+      mochaFile: 'results/test-results.xml',
+      outputs: true,
+      testCaseSwitchClassnameAndName: true
+    }
   },
 });
-
-const { defineConfig } = require('cypress')
-module.exports = defineConfig({
-  reporter: 'junit',
-  reporterOptions: {
-    mochaFile: 'results/test-results.xml',
-    outputs: true,
-    testCaseSwitchClassnameAndName: true
-  }
-})
