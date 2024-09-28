@@ -52,7 +52,9 @@ jobs:
       with:
         path: ./all-blob-reports
         pattern: blob-report-*
+        merge-multiple: true
     - name: Merge into HTML Report
+      if: ${{ !cancelled() }}
       run: npx playwright merge-reports --reporter html ./all-blob-reports
     - name: Upload HTML report
       uses: actions/upload-artifact@v4
