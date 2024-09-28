@@ -52,7 +52,6 @@ jobs:
       with:
         path: ./all-blob-reports
         pattern: blob-report-*
-        merge-multiple: true
       if: ${{ !cancelled() }}
     - name: Merge into HTML Report
       run: npx playwright merge-reports --reporter html ./all-blob-reports
