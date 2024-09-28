@@ -53,7 +53,7 @@ jobs:
         path: ./all-blob-reports
         pattern: blob-report-*
         merge-multiple: true
-      if: github.event_name == 'push' || github.event_name == 'pull_request'
+      if: ${{ !cancelled() }}
     - name: Merge into HTML Report
       run: npx playwright merge-reports --reporter html ./all-blob-reports
     - name: Upload HTML report
