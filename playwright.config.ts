@@ -10,7 +10,7 @@ export default defineConfig({
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 1 : undefined,
   /* Reporter */
-  reporter: 'html',
+  reporter: process.env.CI ? 'blob' : 'html',
   /* Main browsers */
   projects: [
     {
