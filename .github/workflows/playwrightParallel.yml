@@ -33,8 +33,8 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: blob-report-${{ matrix.shardIndex }}
-        path: ./all-blob-reports
-        retention-days: 1
+        path: '/home/runner/work/MyWebsite/MyWebsite/all-blob-reports'
+        retention-days: 2
 
   merge-reports:
     if: ${{ !cancelled() }}
@@ -50,12 +50,12 @@ jobs:
     - name: Download blob reports from GitHub Actions Artifacts
       uses: actions/download-artifact@v4
       with:
-        path: ./all-blob-reports
+        path: '/home/runner/work/MyWebsite/MyWebsite/all-blob-reports'
         pattern: blob-report-*
         merge-multiple: true
       if: github.event_name == 'push' || github.event_name == 'pull_request'
     - name: Merge into HTML Report
-      run: npx playwright merge-reports --reporter html ./all-blob-reports
+      run: npx playwright merge-reports --verbose --reporter html '/home/runner/work/MyWebsite/MyWebsite/all-blob-reports'
     - name: Upload HTML report
       uses: actions/upload-artifact@v4
       with:
