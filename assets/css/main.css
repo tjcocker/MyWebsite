@@ -1933,6 +1933,12 @@ ul.social li a.fa-github {
 	perspective: 800px;
 }
 
+ul.social li a.fa-bitbucket {
+	background-color: #ffffff;
+	animation: animate 8s linear infinite;
+	perspective: 800px;
+}
+
 @keyframes animate {
 	0% {
 		transform: rotateY(0deg);

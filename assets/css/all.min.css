@@ -266,6 +266,10 @@
     content: "\f092"
 }
 
+.fa-bitbucket:before {
+    content: "\f171"
+}
+
 .fa-linkedin:before {
     content: "\f08c"
 }
