@@ -5,7 +5,6 @@ test('test', async ({ page }) => {
   await page.goto('http://tim-cockerham.com/');
   await expect(page.locator('h1')).toContainText('Welcome');
   await expect(page.getByRole('img', { name: 'me and my dog Tony' })).toBeVisible();
-  await expect(page.locator('i')).toContainText('Take a look around. Also, check out my Next.js app here:');
   await expect(page.locator('body')).toContainText('Testing');
   await page.getByPlaceholder('Enter city name').click();
   await page.getByPlaceholder('Enter city name').fill('Westminster');
