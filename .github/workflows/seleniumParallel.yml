@@ -27,7 +27,7 @@ jobs:
           node-version: '19'
           cache: 'npm'
       - run: npm ci
-      - run: npm run ./TestFiles/SeleniumWebDriver/WebsiteTest.py
+      - run: npm run ./TestFiles/SeleniumWebDriver/
         env:
           BROWSER: ${{ matrix.browser }}
       - uses: actions/upload-artifact@v3
