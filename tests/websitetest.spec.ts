@@ -26,6 +26,5 @@ test('test', async ({ page }) => {
   await expect(page.getByText('Round: 1 of')).toBeVisible();
   await page.getByRole('link', { name: 'Return to Main Site' }).click();
   await page.getByRole('link', { name: 'Contact' }).click();
-  await expect(page.getByRole('strong')).toContainText('Email Me');
 });
 

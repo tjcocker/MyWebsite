@@ -278,6 +278,10 @@
     content: "\f0e0"
 }
 
+.fa-react:before {
+    content: "\f41b"
+}
+
 .fa-bitbucket:before {
     content: "\f171"
 }
