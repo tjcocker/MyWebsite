@@ -266,6 +266,14 @@
     content: "\f092"
 }
 
+.fa-question:before {
+    content: "\3f"
+}
+
+.fa-atlassian:before {
+    content: "\f77b"
+}
+
 .fa-envelope:before {
     content: "\f0e0"
 }
