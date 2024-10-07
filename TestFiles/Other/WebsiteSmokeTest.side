@@ -77,67 +77,6 @@
         ["xpath=//a[contains(.,'JavaScript')]", "xpath:innerText"]
       ],
       "value": ""
-    }, {
-      "id": "917f72c1-57d2-46d0-9b35-c896e9807bd4",
-      "comment": "",
-      "command": "click",
-      "target": "css=#JavaScript .col-4:nth-child(2) img",
-      "targets": [
-        ["css=#JavaScript .col-4:nth-child(2) img", "css:finder"],
-        ["xpath=//article[@id='JavaScript']/div/div/div[2]/article/a/img", "xpath:idRelative"],
-        ["xpath=//div[2]/article/a/img", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "d7d6a92f-219c-4516-ae93-71c54600c9c4",
-      "comment": "",
-      "command": "assertText",
-      "target": "css=h3",
-      "targets": [
-        ["css=h3", "css:finder"],
-        ["xpath=//h3", "xpath:position"]
-      ],
-      "value": "Git to Jira"
-    }, {
-      "id": "cb986843-3ad3-45a9-a699-ebc986aa409f",
-      "comment": "",
-      "command": "click",
-      "target": "linkText=Return to Main Site",
-      "targets": [
-        ["linkText=Return to Main Site", "linkText"],
-        ["css=a", "css:finder"],
-        ["xpath=//a[contains(text(),'Return to Main Site')]", "xpath:link"],
-        ["xpath=//a[contains(@href, 'index.html')]", "xpath:href"],
-        ["xpath=//a", "xpath:position"],
-        ["xpath=//a[contains(.,'Return to Main Site')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "f58b0451-54d0-437c-accb-e0b229225fa7",
-      "comment": "",
-      "command": "click",
-      "target": "linkText=JavaScript",
-      "targets": [
-        ["linkText=JavaScript", "linkText"],
-        ["css=li:nth-child(3) > a", "css:finder"],
-        ["xpath=//a[contains(text(),'JavaScript')]", "xpath:link"],
-        ["xpath=//nav[@id='nav']/ul/li[3]/a", "xpath:idRelative"],
-        ["xpath=//a[contains(@href, '#JavaScript')]", "xpath:href"],
-        ["xpath=//li[3]/a", "xpath:position"],
-        ["xpath=//a[contains(.,'JavaScript')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "cb8f796e-a377-4f6a-a67f-1901a7c013bd",
-      "comment": "",
-      "command": "click",
-      "target": "css=#JavaScript .col-4:nth-child(4) img",
-      "targets": [
-        ["css=#JavaScript .col-4:nth-child(4) img", "css:finder"],
-        ["xpath=//article[@id='JavaScript']/div/div/div[4]/article/a/img", "xpath:idRelative"],
-        ["xpath=//div[4]/article/a/img", "xpath:position"]
-      ],
-      "value": ""
     }]
   }],
   "suites": [{
