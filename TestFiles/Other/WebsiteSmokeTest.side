@@ -97,7 +97,7 @@
         ["css=h3", "css:finder"],
         ["xpath=//h3", "xpath:position"]
       ],
-      "value": "Grocery List"
+      "value": "Git to Jira"
     }, {
       "id": "cb986843-3ad3-45a9-a699-ebc986aa409f",
       "comment": "",
