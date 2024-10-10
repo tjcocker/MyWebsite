@@ -25,7 +25,7 @@ jobs:
          host: 'https://timcockerham.testrail.io/'
          username: 'tim@tim-cockerham.com'
          password: '${{secrets.TESTRAILPW}}'
-         project: 'Github Actions Tests'
+         project: 'App Tests'
          auto_create_cases_yes: 'true'
          report_file_path: 'reports/test-report.xml'
          title: 'Automated Cypress Tests from GitHub'
