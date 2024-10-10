@@ -28,6 +28,7 @@ describe('Web App Tests', () => {
     cy.get('#amount').clear();
     cy.get('#amount').type('500');
     cy.get('.bg-blue-500').click();
+    cy.visit('https://nextjs-dashboard-liard-mu-62.vercel.app/dashboard/invoices');
     cy.get('.bg-white > :nth-child(1) > :nth-child(3)').should('have.text', '$500.00');
   })
 
@@ -45,6 +46,7 @@ describe('Web App Tests', () => {
     cy.get('#amount').type('19.88');
     cy.get('#paid').check();
     cy.get('.bg-blue-500').click();
+    cy.visit('https://nextjs-dashboard-liard-mu-62.vercel.app/dashboard/invoices');
     cy.get('.bg-white > :nth-child(1) > :nth-child(3)').should('have.text', '$19.88');
   })
 
