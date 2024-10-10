@@ -2,7 +2,7 @@
 
 describe('Grocery list app tests', () => {
   beforeEach(() => {
-    cy.visit('/grocery.html')
+    cy.visit('https://tim-cockerham.com/grocery.html')
   })
 
   it('URL contains grocery', () => {
