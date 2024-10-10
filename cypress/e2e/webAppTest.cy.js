@@ -7,7 +7,7 @@ describe('Web App Tests', () => {
     cy.get('span').click();
     cy.get('h1 > b').should('have.text', 'Welcome!');
     cy.get('[href="/dashboard"] > span').click();
-    cy.get('h1').should('be.visible');
+    cy.get(':nth-child(1) > .flex > .ml-2').should('have.text', 'Collected');
     cy.get('[href="/dashboard/invoices"]').click();
     cy.get('.flex-grow > :nth-child(1) > :nth-child(1) > .__className_712214').should('have.text', 'Invoices');
     cy.get('.hidden > .bg-white > :nth-child(2) > :nth-child(2)').should('have.text', 'thanos@thanos.info');

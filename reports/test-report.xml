@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="24.181" tests="6" failures="1">
+  <testsuite name="Root Suite" timestamp="2024-10-10T19:55:48" tests="0" file="cypress\e2e\webAppTest.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Web App Tests" timestamp="2024-10-10T19:55:48" tests="6" time="24.171" failures="1">
+    <testcase name="Page Navagation Tests" time="0.000" classname="Web App Tests Page Navagation Tests">
+      <failure message="Timed out retrying after 4000ms: expected &apos;&lt;h1.__className_712214.mb-4.text-xl.md:text-2xl&gt;&apos; to be &apos;visible&apos;
+
+This element `&lt;h1.__className_712214.mb-4.text-xl.md:text-2xl&gt;` is not visible because its content is being clipped by one of its parent elements, which has a CSS property of overflow: `hidden`, `scroll` or `auto`" type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 4000ms: expected '<h1.__className_712214.mb-4.text-xl.md:text-2xl>' to be 'visible'
+
+This element `<h1.__className_712214.mb-4.text-xl.md:text-2xl>` is not visible because its content is being clipped by one of its parent elements, which has a CSS property of overflow: `hidden`, `scroll` or `auto`
+    at Context.eval (webpack://playwright/./cypress/e2e/webAppTest.cy.js:10:17)]]></failure>
+    </testcase>
+    <testcase name="Edit Invoice Test" time="3.268" classname="Web App Tests Edit Invoice Test">
+    </testcase>
+    <testcase name="Delete Invoice Test" time="1.833" classname="Web App Tests Delete Invoice Test">
+    </testcase>
+    <testcase name="Create Invoice Test" time="3.693" classname="Web App Tests Create Invoice Test">
+    </testcase>
+    <testcase name="Invoice Search Test" time="4.418" classname="Web App Tests Invoice Search Test">
+    </testcase>
+    <testcase name="Customer Search Test" time="2.228" classname="Web App Tests Customer Search Test">
+    </testcase>
+  </testsuite>
+</testsuites>
