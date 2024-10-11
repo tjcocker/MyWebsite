@@ -11,7 +11,7 @@ class WebAppTest(unittest.TestCase):
         self.driver = webdriver.Chrome()
  
     def test_webapp(self):
-         
+        # needed to add sleeps for pipeline run flakiness
         driver = self.driver
         driver.get("https://nextjs-dashboard-liard-mu-62.vercel.app/")
         self.assertIn("Tim Cockerham", driver.title)
