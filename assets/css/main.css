@@ -1929,13 +1929,13 @@ ul.social li a.fa-linkedin-in {
 
 ul.social li a.fa-github {
 	background-color: #FAFAFA;
-	animation: animate 10s linear infinite;
+	animation: animate 5s linear infinite;
 	perspective: 800px;
 }
 
 ul.social li a.fa-bitbucket {
 	background-color: #ffffff;
-	animation: animate 5s linear infinite;
+	animation: animate 10s linear infinite;
 	perspective: 800px;
 }
 
