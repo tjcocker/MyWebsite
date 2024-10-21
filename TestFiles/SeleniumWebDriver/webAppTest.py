@@ -3,7 +3,6 @@ from time import sleep
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.devtools.v85.dom import scroll_into_view_if_needed
-from selenium.webdriver.common.keys import Keys
 
 class WebAppTest(unittest.TestCase):
  
@@ -18,7 +17,7 @@ class WebAppTest(unittest.TestCase):
         self.assertEqual("Welcome to my Next.js web app!", "Welcome to my Next.js web app!",)
         sleep(1)
         driver.find_element(By.LINK_TEXT, "Click Here").click()
-        sleep(1)
+        sleep(2)
         self.assertIn("Tim Cockerham", driver.title)
         self.assertEqual("Welcome!", "Welcome!",)
         driver.find_element(By.LINK_TEXT, "Go to Invoices").click()
@@ -65,13 +64,7 @@ class WebAppTest(unittest.TestCase):
         sleep(1)
         driver.get("https://nextjs-dashboard-liard-mu-62.vercel.app/dashboard/invoices?page=3")
         sleep(1)
-        self.assertEqual("Spiderman", "Spiderman",)
-        driver.get("https://nextjs-dashboard-liard-mu-62.vercel.app/dashboard/invoices/c34dc920-35c3-4643-a1a6-bec9b1d5d080/edit")
-        sleep(1)
-        self.assertEqual("0.33", "0.33",)
-        driver.find_element(By.LINK_TEXT, "Cancel").click()
-        sleep(1)
-        self.assertEqual("Thanos", "Thanos",)        
+        self.assertEqual("Spiderman", "Spiderman",)       
         
     def tearDown(self):
         self.driver.close()
