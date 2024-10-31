@@ -5,7 +5,7 @@ describe('Web App Tests', () => {
     cy.wait(1000);
     cy.visit('https://nextjs-dashboard-liard-mu-62.vercel.app/')
     cy.wait(1000);
-    cy.get('.flex-col > .__className_712214').should('have.text', 'Welcome  to my Next.js web app! This is a work in progress.');
+    cy.get('span').should('have.text', 'Click Here');
     cy.get('span').click();
     cy.wait(1000);
     cy.get('h1 > b').should('have.text', 'Welcome!');
@@ -14,7 +14,7 @@ describe('Web App Tests', () => {
     cy.get(':nth-child(1) > .flex > .ml-2').should('have.text', 'Collected');
     cy.get('[href="/dashboard/invoices"]').click();
     cy.wait(1000);
-    cy.get('.flex-grow > :nth-child(1) > :nth-child(1) > .__className_712214').should('have.text', 'Invoices');
+    cy.get('.bg-sky-100 > .hidden').should('have.text', 'Invoices');
     cy.get('.hidden > .bg-white > :nth-child(2) > :nth-child(2)').should('have.text', 'thanos@thanos.info');
     cy.get('[href="/dashboard/customers"]').click();
     cy.wait(1000);
@@ -22,13 +22,14 @@ describe('Web App Tests', () => {
     cy.get('[href="/dashboard/contact"] > .hidden').click();
     cy.wait(1000);
     cy.get('[href="mailto:tim@tim-cockerham.com"] > span').should('be.visible');
+    
   })
 
   it('Edit Invoice Test', function () {
     cy.wait(1000);
     cy.visit('https://nextjs-dashboard-liard-mu-62.vercel.app/dashboard/invoices');
     cy.wait(1000);
-    cy.get('.flex-grow > :nth-child(1) > :nth-child(1) > .__className_712214').should('have.text', 'Invoices');
+    cy.get('.bg-sky-100 > .hidden').should('have.text', 'Invoices');
     cy.get('.h-10 > .hidden').should('have.text', 'Create Invoice');
     cy.get('.hidden > .bg-white > :nth-child(1) > :nth-child(2)').should('have.text', 'quill@gotg.org');
     cy.get('.bg-white > :nth-child(1) > :nth-child(3)').should('have.text', '$19.88');
@@ -46,6 +47,7 @@ describe('Web App Tests', () => {
     cy.visit('https://nextjs-dashboard-liard-mu-62.vercel.app/dashboard/invoices');
     cy.wait(1000);
     cy.get('.bg-white > :nth-child(1) > :nth-child(3)').should('have.text', '$500.00');
+    
   })
  
   it('Delete Invoice Test', function () {
