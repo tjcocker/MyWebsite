@@ -1,6 +1,5 @@
 /// <reference types="cypress" />
 
-context('Navagation', function () { 
   describe('Page Navagation Tests', () => {
     it('Can navagate to every page', { tags: '@smoke' }, () => { // smoke tag
       cy.visit('/');
@@ -22,4 +21,4 @@ context('Navagation', function () {
       cy.get('[href="mailto:tim@tim-cockerham.com"] > span').should('be.visible');
     })
   })
-})
+
