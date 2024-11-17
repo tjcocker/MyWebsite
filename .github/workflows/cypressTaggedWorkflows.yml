@@ -23,7 +23,7 @@ jobs:
         with:
           command: npx cypress run
           browser: chrome
-          env: grepTags=smoke
+          env: grepTags=@smoke
 
       - name: Upload screenshots
         uses: actions/upload-artifact@v4
@@ -44,7 +44,7 @@ jobs:
         with:
           command: npx cypress run
           browser: chrome
-          env: grepTags=customers
+          env: grepTags=@customers
       
       - name: Upload screenshots
         uses: actions/upload-artifact@v4
