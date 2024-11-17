@@ -22,7 +22,7 @@ jobs:
         with:
           python-version: '3.x'
       - name: Upload screenshots
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         if: failure()
         with:
               name: cypress-snapshots
