@@ -8,13 +8,14 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
       require('@cypress/grep/src/plugin')(config);
       return config;
-
     },
+
     env: {
       grepFilterSpecs: true,
       grepOmitFiltered: true,
       grepIntegrationFolder: '../../',
     },
+
     reporter: 'junit',
     reporterOptions: {
       mochaFile: 'reports/test-report.xml',
