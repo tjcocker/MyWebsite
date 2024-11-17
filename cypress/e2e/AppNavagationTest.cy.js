@@ -1,8 +1,8 @@
 /// <reference types="cypress" />
 
-context('Navagation', function () { // smoke tag
-  describe('Page Navagation Tests', { tags: 'smoke' }, () => {
-    it('Can navagate to every page', () => {
+context('Navagation', { tags: 'smoke' }, function () { // smoke tag
+  describe('Page Navagation Tests', () => {
+    it('Can navagate to every page', { tags: 'smoke' }, () => {
       cy.visit('/');
       cy.get('[data-cy=clickhere]').should('have.text', 'Click Here'); // using data attributes for selectors
       cy.getBySel("clickhere").click();
