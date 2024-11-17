@@ -21,7 +21,7 @@ jobs:
       - name: Run smoke tests
         uses: cypress-io/github-action@v6
         with:
-          command: npx cypress start
+          command: npm start
           browser: chrome
           env: grepTags=smoke
 
@@ -42,7 +42,7 @@ jobs:
       - name: Run customers tests
         uses: cypress-io/github-action@v6
         with:
-          command: npx cypress start
+          command: npm start
           browser: chrome
           env: grepTags=customers
       
