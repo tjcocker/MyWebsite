@@ -11,6 +11,8 @@ module.exports = defineConfig({
 
     },
     env: {
+      grepFilterSpecs: true,
+      grepOmitFiltered: true,
       grepIntegrationFolder: '../../',
     },
     reporter: 'junit',
