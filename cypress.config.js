@@ -11,7 +11,7 @@ module.exports = defineConfig({
     },
 
     env: {
-      grepFilterSpecs: true,
+      grepFilterSpecs: false,
       grepOmitFiltered: true,
     //  grepIntegrationFolder: '../../',
     },
