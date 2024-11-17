@@ -1,0 +1,52 @@
+name: Cypress Tagged Jobs
+on:
+  workflow_dispatch:
+    inputs:
+      smoke:
+        description: Run the tests tagged "smoke"
+        required: false
+        type: boolean
+      customers:
+        description: Run the tests tagged "customers"
+        required: false
+        type: boolean
+jobs:
+  smoke:
+    if: ${{ github.event.inputs.smoke == 'true' }}
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Run smoke tests
+        uses: cypress-io/github-action@v6
+        with:
+          start: npm start
+          env: grepTags=smoke
+
+      - name: Upload screenshots
+        uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: cypress-snapshots
+          path: cypress/screenshots
+
+  customers:
+    if: ${{ github.event.inputs.customers == 'true' }}
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Run customers tests
+        uses: cypress-io/github-action@v6
+        with:
+          start: npm start
+          env: grepTags=customers
+      
+      - name: Upload screenshots
+        uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: cypress-snapshots
+          path: cypress/screenshots
