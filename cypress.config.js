@@ -6,6 +6,7 @@ module.exports = defineConfig({
     experimentalStudio: true,
     supportFile: 'cypress/support/e2e.js',
     setupNodeEvents(on, config) {
+      config.env = config.env || {};
       require('@cypress/grep/src/plugin')(config);
       return config;
     },
