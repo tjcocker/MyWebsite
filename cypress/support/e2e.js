@@ -19,8 +19,5 @@ import './commands'
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
 
-const registerCypressGrep = require('@cypress/grep')
-registerCypressGrep()
-
 import registerCypressGrep from '@cypress/grep'
 registerCypressGrep()
