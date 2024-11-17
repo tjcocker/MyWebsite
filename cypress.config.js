@@ -4,7 +4,7 @@ module.exports = defineConfig({
   e2e: {
     baseUrl: "https://nextjs-dashboard-liard-mu-62.vercel.app",
     experimentalStudio: true,
-    supportFile: false,
+    supportFile: true,
     setupNodeEvents(on, config) {
       // implement node event listeners here
       
