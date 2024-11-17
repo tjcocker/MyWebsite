@@ -3,10 +3,11 @@
 context('Navagation', { tags: 'smoke' }, function () { // smoke tag
   describe('Page Navagation Tests', () => {
     it('Can navagate to every page', () => {
+      cy.wait(3000);
       cy.visit('/');
       cy.wait(3000);
       cy.get('[data-cy=clickhere]').should('have.text', 'Click Here'); // using data attributes for selectors
-      cy.getBySel("clickhere").click();         
+      cy.getBySel("clickhere").click();
       cy.title().should('eq', 'Tim Cockerham');                        // using custom commands for the selectors
       cy.getBySel("welcomeText").should('have.text', 'Welcome!');
       cy.get('[href="/dashboard"] > span').click();
