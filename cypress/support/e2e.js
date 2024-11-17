@@ -21,3 +21,6 @@ import './commands'
 
 const registerCypressGrep = require('@cypress/grep')
 registerCypressGrep()
+
+import registerCypressGrep from '@cypress/grep'
+registerCypressGrep()
