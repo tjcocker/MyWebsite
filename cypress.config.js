@@ -10,6 +10,9 @@ module.exports = defineConfig({
       return config;
 
     },
+    env: {
+      grepIntegrationFolder: '../../',
+    },
     reporter: 'junit',
     reporterOptions: {
       mochaFile: 'reports/test-report.xml',
