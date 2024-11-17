@@ -21,6 +21,12 @@ jobs:
         uses: actions/setup-python@v3
         with:
           python-version: '3.x'
+      - name: Upload screenshots
+        uses: actions/upload-artifact@v2
+        if: failure()
+        with:
+              name: cypress-snapshots
+              path: cypress/screenshots
       - name: Execute TRCLI Action
         uses: gurock/trcli-action@main
         with:
