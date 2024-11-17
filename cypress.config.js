@@ -6,15 +6,14 @@ module.exports = defineConfig({
     experimentalStudio: true,
     supportFile: 'cypress/support/e2e.js',
     setupNodeEvents(on, config) {
-      config.env = config.env || {};
-      require('@cypress/grep/src/plugin')(config);
+      require('@bahmutov/cy-grep/src/plugin')(config);
       return config;
     },
 
     env: {
       grepFilterSpecs: true,
       grepOmitFiltered: true,
-      grepIntegrationFolder: '../../',
+    //  grepIntegrationFolder: '../../',
     },
 
     reporter: 'junit',
