@@ -23,10 +23,9 @@
 	<nav id="nav">
 		<ul class="container">
 			<li><a href="#top">Home</a></li>
+			<li><a href="#Cypress">Cypress</a></li>
 			<li><a href="#CICD">CI/CD</a></li>
-			<li><a href="#testing">Testing</a></li>
-			<li><a href="#Docker">Docker</a></li>
-			<li><a href="#Python">Python</a></li>
+			<li><a href="#testingtools">Testing Tools</a></li>
 			<li><a href="#JavaScript">JavaScript</a></li>
 			<li><a href="#contact">Contact</a></li>
 		</ul>
@@ -55,13 +54,86 @@
 		</div>
 	</article>
 
-	<!-- Automation -->
+	<!-- Cypress -->
+	<article id="Cypress" class="wrapper style3">
+		<div class="container">
+			<header>
+				<h2>Cypress</h2>
+				<p><b>One of my favorite testing tools</b></p>
+			</header>
+			<div class="row">
+
+				<div class="col-4 col-6-medium col-12-small">
+					<article>
+						<video width="384" height="269" controls poster="images/cypressTestSmall.webp"
+							class="image featured">
+							<source src="videos/cypressAppTest.mp4">
+						</video>
+						<h3>E2E testing</h3>
+						<p><b>
+								&ast; data attributes for better targeting
+								<br>&ast; custom commands for selectors
+								<br>&ast; test tagging for targeted runs
+								<br>&ast; test isolation
+							</b></p>
+					</article><br>
+				</div>
+
+				<div class="col-4 col-6-medium col-12-small">
+					<article>
+						<a href="images/cypressFixture.webp" class="image featured"><img
+								src="images/cypressFixtureSmall.webp" alt="cypress fixture image" loading="lazy" /></a>
+						<h3>Data-Driven Testing</h3>
+						<p><b>Testing a list of cities using a fixture, for my <a href="#JavaScript">weather app</a> below</b>
+						</p>
+					</article><br>
+				</div>
+
+				<div class="col-4 col-6-medium col-12-small">
+					<article>
+						<a href="images/taggedGitHub.webp" class="image featured"><img
+								src="images/taggedGitHubSmall.webp" width="384" height="269"
+								alt="tagged github actions image" /></a>
+						<h3>Tagged Tests</h3>
+						<p><b>Using tags to run specific tests in GitHub Actions,
+							<a href="images/taggedCLI.webp">or with the CLI</a>
+						</b></p>
+					</article><br>
+				</div>
+
+				<div class="col-4 col-6-medium col-12-small">
+					<article>
+						<a href="images/cypressDocker.webp" class="image featured"><img
+								src="images/cypressDockerSmall.webp" alt="cypress docker image" loading="lazy" /></a>
+						<h3>Cypress / Docker</h3>
+						<p><b>Running Cypress tests in a Docker container with GitHub Actions &amp; Bitbucket Pipelines
+							</b>
+						</p>
+					</article><br>
+				</div>
+
+				<div class="col-4 col-6-medium col-12-small">
+					<article>
+						<a href="images/testRail.webp" class="image featured"><img src="images/testRailSmall.webp"
+								alt="TestRail image" /></a>
+						<h3>TestRail</h3>
+						<p><b>Cypress test results generated from GitHub</b>
+						</p>
+					</article><br>
+				</div>
+
+			</div>
+		</div>
+	</article>
+
+
+	<!-- CICD -->
 	<article id="CICD" class="wrapper style3">
 		<div class="container">
 			<header>
 				<h2>CI/CD &nbsp;<a class="icon brands fa-git" aria-label="Link to section">
 					</a></h2>
-				<p><b>From source control, to automated test workflows, to test management & reporting</b></p>
+				<p><b>Source control, automated test workflows, test management & reporting</b></p>
 			</header>
 			<div class="row">
 
@@ -84,18 +156,8 @@
 								alt="Jira image" /></a>
 						<h3>Git to Jira</a></h3>
 						<p><b>Sourcetree > Bitbucket > Bitbucket Pipelines Cypress test > Commit linked to Jira task
-								<br>*playing around with another pipeline, currently inactive
+								<br>*currently inactive
 							</b>
-						</p>
-					</article><br>
-				</div>
-
-				<div class="col-4 col-6-medium col-12-small">
-					<article>
-						<a href="images/testRail.webp" class="image featured"><img src="images/testRailSmall.webp"
-								alt="TestRail image" /></a>
-						<h3>TestRail</h3>
-						<p><b>Cypress test results generated from GitHub</b>
 						</p>
 					</article><br>
 				</div>
@@ -126,30 +188,15 @@
 	</article>
 
 
-	<!-- Testing -->
-	<article id="testing" class="wrapper style3">
+	<!-- Testing Tools -->
+	<article id="testingtools" class="wrapper style3">
 		<div class="container">
 			<header>
-				<h2>Testing &nbsp;<a class="fa-solid fa-flask">
+				<h2>Other Testing Tools &nbsp;<a class="fa-solid fa-flask">
 					</a></h2>
-				<p><b>Tests on my web app and this website with different testing tools</b></p>
+				<p><b>Tests on my web app and this website with different tools I've used</b></p>
 			</header>
 			<div class="row">
-
-				<div class="col-4 col-6-medium col-12-small">
-					<article>
-						<video width="384" height="269" controls poster="images/cypressTestSmall.webp"
-							class="image featured">
-							<source src="videos/cypressAppTest.mp4">
-						</video>
-						<h3>Cypress</h3>
-						<p><b>E2E web app testing
-							<br>&ast; data attributes for elements
-							<br>&ast; custom commands for selectors
-							<br>&ast; test tagging for CI
-							</b></p>
-					</article><br>
-				</div>
 
 				<div class="col-4 col-6-medium col-12-small">
 					<article>
@@ -210,6 +257,26 @@
 
 				<div class="col-4 col-6-medium col-12-small">
 					<article>
+						<video width="384" height="269" controls poster="images/grid1.webp" class="image featured">
+							<source src="videos/grid1.mp4">
+						</video>
+						<h3>Selenium Grid</h3>
+						<p><b>Running tests in a Selenium WebDriver Docker container</b></p>
+					</article><br>
+				</div>
+
+				<div class="col-4 col-6-medium col-12-small">
+					<article>
+						<video width="384" height="269" controls poster="images/pyCharm.webp" class="image featured">
+							<source src="videos/pyCharm.mp4">
+						</video>
+						<h3>PyCharm IDE</h3>
+						<p><b>Selenium WebDriver test on the weather app below</b></p>
+					</article><br>
+				</div>
+
+				<div class="col-4 col-6-medium col-12-small">
+					<article>
 						<a href="images/JMeter.webp" class="image featured"><img src="images/JMeterSmall.webp"
 								alt="JMeter" loading="lazy" /></a>
 						<h3>JMeter</h3>
@@ -260,97 +327,13 @@
 		</div>
 	</article>
 
-	<!-- Docker -->
-	<article id="Docker" class="wrapper style3">
-		<div class="container">
-			<header>
-				<h2>Docker &nbsp;<a class="icon brands fa-docker">
-					</a></h2>
-				<p><b>Containerized testing</b></p>
-			</header>
-
-			<div class="row">
-				<div class="col-4 col-6-medium col-12-small">
-					<article>
-						<a href="images/cypressDocker.webp" class="image featured"><img
-								src="images/cypressDockerSmall.webp" alt="cypress docker image" loading="lazy" /></a>
-						<h3>Cypress</h3>
-						<p><b>Running Cypress tests in a Docker container with GitHub Actions &amp; Bitbucket Pipelines
-							</b>
-						</p>
-					</article><br>
-				</div>
-
-				<div class="col-4 col-6-medium col-12-small">
-					<article>
-						<video width="384" height="269" controls poster="images/grid1.webp" class="image featured">
-							<source src="videos/grid1.mp4">
-						</video>
-						<h3>Selenium Grid</h3>
-						<p><b>Running tests in a Selenium WebDriver Docker container</b></p>
-					</article><br>
-				</div>
-
-				<div class="col-4 col-6-medium col-12-small">
-					<article>
-						<a href="images/k8.webp" class="image featured"><img src="images/k8Small.webp"
-								alt="kubernetes image" loading="lazy" /></a>
-						<h3>Kubernetes</h3>
-						<p><b>Running a few tutorial pods (not used for this website, just some basic familiarity)</b>
-						</p>
-					</article><br>
-				</div>
-
-			</div>
-
-		</div>
-	</article>
-
-	<!--Python -->
-	<article id="Python" class="wrapper style3">
-		<div class="container">
-			<header>
-				<h2>Python &nbsp;<a class="icon brands fa-python">
-					</a></h2>
-				<p><b></b></p>
-			</header>
-			<div class="row">
-
-
-				<div class="col-4 col-6-medium col-12-small">
-					<article>
-						<video width="384" height="269" controls poster="images/pyCharm.webp" class="image featured">
-							<source src="videos/pyCharm.mp4">
-						</video>
-						<h3>PyCharm IDE</h3>
-						<p><b>Selenium WebDriver test on the weather app below</b></p>
-					</article><br>
-				</div>
-
-
-				<div class="col-4 col-6-medium col-12-small">
-					<article>
-						<a href="images/pytest.webp" class="image featured"><img src="images/pytestSmall.webp"
-								alt="pytest image" loading="lazy" /></a>
-						<h3>Pytest</h3>
-						<p><b>Starting to learn how to write unit tests for a quick Slot Game project</b>
-						</p>
-					</article><br>
-				</div>
-
-			</div>
-
-		</div>
-	</article>
-
-
 	<!-- JavaScript -->
 	<article id="JavaScript" class="wrapper style3">
 		<div class="container">
 			<header>
 				<h2>JavaScript &nbsp;<a class="icon brands fa-js">
 					</a></h2>
-				<p><b>Some simple projects so I have something on the site to test</b></p>
+				<p><b>A few projects for testing</b></p>
 				<hr />
 			</header>
 			<div class="row">
