@@ -1,4 +1,5 @@
 const { defineConfig } = require("cypress");
+require('dotenv').config();
 
 module.exports = defineConfig({
   e2e: {
@@ -12,7 +13,7 @@ module.exports = defineConfig({
     },
 
     env: {
-      grepFilterSpecs: false,
+      grepFilterSpecs: true,
       grepOmitFiltered: true,
       grepIntegrationFolder: '../../',
     },

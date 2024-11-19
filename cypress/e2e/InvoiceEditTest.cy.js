@@ -1,8 +1,7 @@
 /// <reference types="cypress" />
 
-context('Edit Invoices', { tags: 'edit' }, function () { 
     describe('Edit Invoices Tests', () => {
-        it('Can Edit Invoices', () => {
+        it('Can Edit Invoices', { tags: ['@edit'] }, () => {
             cy.visit('/dashboard/invoices');
             cy.get('.bg-sky-100 > .hidden').should('have.text', 'Invoices');
             cy.get('.h-10 > .hidden').should('have.text', 'Create Invoice');
@@ -28,4 +27,3 @@ context('Edit Invoices', { tags: 'edit' }, function () {
             cy.get('.bg-white > :nth-child(1) > :nth-child(3)').should('have.text', '$19.88');
         })
     })
-})

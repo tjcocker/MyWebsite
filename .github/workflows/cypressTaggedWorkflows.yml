@@ -3,11 +3,27 @@ on:
   workflow_dispatch:
     inputs:
       smoke:
-        description: Run the tests tagged "smoke"
+        description: Run the tests tagged "Smoke"
         required: false
         type: boolean
       customers:
-        description: Run the tests tagged "customers"
+        description: Run the tests tagged "Customers"
+        required: false
+        type: boolean
+      create:
+        description: Run the tests tagged "Create"
+        required: false
+        type: boolean
+      edit:
+        description: Run the tests tagged "Edit"
+        required: false
+        type: boolean
+      delete:
+        description: Run the tests tagged "Delete"
+        required: false
+        type: boolean
+      search:
+        description: Run the tests tagged "Search"
         required: false
         type: boolean
 jobs:
@@ -18,7 +34,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Run smoke tests
+      - name: Run Smoke tests
         uses: cypress-io/github-action@v6
         with:
           command: npx cypress run
@@ -39,12 +55,96 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Run customers tests
+      - name: Run Customers tests
         uses: cypress-io/github-action@v6
         with:
           command: npx cypress run
           browser: chrome
           env: grepTags=@customers
+      
+      - name: Upload screenshots
+        uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: cypress-snapshots
+          path: cypress/screenshots
+
+  create:
+    if: ${{ github.event.inputs.create == 'true' }}
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Run Create tests
+        uses: cypress-io/github-action@v6
+        with:
+          command: npx cypress run
+          browser: chrome
+          env: grepTags=@create
+      
+      - name: Upload screenshots
+        uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: cypress-snapshots
+          path: cypress/screenshots
+
+  edit:
+    if: ${{ github.event.inputs.edit == 'true' }}
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Run Edit tests
+        uses: cypress-io/github-action@v6
+        with:
+          command: npx cypress run
+          browser: chrome
+          env: grepTags=@edit
+      
+      - name: Upload screenshots
+        uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: cypress-snapshots
+          path: cypress/screenshots
+
+  delete:
+    if: ${{ github.event.inputs.delete == 'true' }}
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Run Delete tests
+        uses: cypress-io/github-action@v6
+        with:
+          command: npx cypress run
+          browser: chrome
+          env: grepTags=@delete
+      
+      - name: Upload screenshots
+        uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: cypress-snapshots
+          path: cypress/screenshots
+
+  search:
+    if: ${{ github.event.inputs.search == 'true' }}
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Run Search tests
+        uses: cypress-io/github-action@v6
+        with:
+          command: npx cypress run
+          browser: chrome
+          env: grepTags=@search
       
       - name: Upload screenshots
         uses: actions/upload-artifact@v4

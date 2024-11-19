@@ -1,8 +1,7 @@
 /// <reference types="cypress" />
 
-context('Create Invoices', { tags: 'create' }, function () {
     describe('Create Invoices Tests', () => {
-        it('Can Create Invoices', () => {
+        it('Can Create Invoices', { tags: ['@create'] },() => {
             cy.visit('/dashboard/invoices');
             cy.get('.h-10 > .hidden').click();
             cy.get('#customer').select('d6e15727-9fe1-4961-8c5b-ea44a9bd81aa');
@@ -15,4 +14,3 @@ context('Create Invoices', { tags: 'create' }, function () {
             cy.get(':nth-child(1) > :nth-child(6) > .flex > form > .rounded-md > .w-5 > path').click();
         })
     })
-})

@@ -1,8 +1,7 @@
 /// <reference types="cypress" />
 
-context('Delete Invoice', { tags: 'delete' }, function () { 
     describe('Delete Invoice Test', () => {
-        it('Can Delete Invoices', () => {
+        it('Can Delete Invoices', { tags: ['@delete'] }, () => {
             cy.visit('/dashboard/invoices');
             cy.get(':nth-child(1) > :nth-child(6) > .flex > form > .rounded-md > .w-5').click();
             cy.visit('/dashboard/invoices');
@@ -17,4 +16,3 @@ context('Delete Invoice', { tags: 'delete' }, function () {
             cy.get('.bg-white > :nth-child(1) > :nth-child(3)').should('have.text', '$19.88');
         })
     })
-})
