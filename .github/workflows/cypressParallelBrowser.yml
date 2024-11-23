@@ -12,7 +12,7 @@ jobs:
       - name: Chrome Test
         uses: cypress-io/github-action@v6
         with:
-            command: npx cypress run --spec "cypress/e2e/AppNavagationTest.cy.js"
+            command: npx cypress run --spec /cypress/e2e/AppNavagationTest.cy.js
             browser: chrome
       - name: Upload screenshots
         uses: actions/upload-artifact@v4
