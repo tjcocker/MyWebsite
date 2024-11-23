@@ -3,7 +3,7 @@ name: Cypress Parallel Browser Tests
 on: push
 
 jobs:
-  chrome:
+  Parallel-Browsers:
     runs-on: ubuntu-22.04
     strategy:
      matrix:
