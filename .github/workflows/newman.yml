@@ -1,6 +1,6 @@
 name: Postman - Newman
 
-on: push
+on: workflow_dispatch
 
 jobs:
   postman-newman-action:

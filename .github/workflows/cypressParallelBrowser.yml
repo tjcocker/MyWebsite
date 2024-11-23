@@ -5,7 +5,9 @@ on: push
 jobs:
   chrome:
     runs-on: ubuntu-22.04
-    
+    strategy:
+     matrix:
+      browser: [chrome, firefox, edge]
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -13,7 +15,7 @@ jobs:
         uses: cypress-io/github-action@v6
         with:
             command: npx cypress run --spec ./cypress/e2e/AppNavagationTest.cy.js
-            browser: chrome
+            browser: ${{ matrix.browser }}
       - name: Upload screenshots
         uses: actions/upload-artifact@v4
         if: failure()

@@ -1,6 +1,6 @@
 name: Cypress Docker Test - TestRail Reporting
 
-on: push
+on: workflow_dispatch
 
 jobs:
   cypress-run:
