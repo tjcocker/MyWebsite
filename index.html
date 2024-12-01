@@ -24,10 +24,12 @@
 		<ul class="container">
 			<li><a href="#top">Home</a></li>
 			<li><a href="#Cypress">Cypress</a></li>
+			<li><a href="#Playwright">Playwright</a></li>
+			<li><a href="#Selenium">Selenium</a></li>
 			<li><a href="#CICD">CI/CD</a></li>
-			<li><a href="#testingtools">Testing Tools</a></li>
+			<li><a href="#TestingTools">Testing Tools</a></li>
 			<li><a href="#JavaScript">JavaScript</a></li>
-			<li><a href="#contact">Contact</a></li>
+			<li><a href="#Contact">Contact</a></li>
 		</ul>
 	</nav>
 
@@ -59,7 +61,7 @@
 		<div class="container">
 			<header>
 				<h2>Cypress</h2>
-				<p><b>Quick tests on my website &amp; react app</b></p>
+				<p><b>Tests on my website &amp; react app</b></p>
 			</header>
 			<div class="row">
 
@@ -108,9 +110,9 @@
 						<h3>Other testing</h3>
 						<p><b>
 								&upuparrows; Parallel cross-browser
-								<br>&ast; <a href="videos/viewports.mp4">mobile viewport &amp; 
+								<br>&ast; <a href="videos/viewports.mp4">mobile viewport &amp;
 									responsive design</a>
-								
+
 								<br>&ast; <a href="images/visualRegression.webp">visual regression</a>
 								<br>&ast; <a href="images/accessibility.webp">accessibility</a>
 
@@ -121,8 +123,7 @@
 				<div class="col-4 col-6-medium col-12-small">
 					<article>
 						<a href="images/taggedGitHub.webp" class="image featured"><img
-								src="images/taggedGitHubSmall.webp" width="384" height="269"
-								alt="tagged github actions image" /></a>
+								src="images/taggedGitHubSmall.webp" alt="tagged github actions image" /></a>
 						<h3>Tagged Tests</h3>
 						<p><b>Using tags to run specific tests in GitHub Actions,
 								<a href="images/taggedCLI.webp">or with the CLI</a>
@@ -144,7 +145,7 @@
 					<article>
 						<a href="images/cypressDocker.webp" class="image featured"><img
 								src="images/cypressDockerSmall.webp" alt="cypress docker image" /></a>
-						<h3>Cypress / Docker</h3>
+						<h3>Docker</h3>
 						<p><b>Running Cypress tests in a Docker container with GitHub Actions &amp; Bitbucket Pipelines
 							</b>
 						</p>
@@ -155,6 +156,99 @@
 		</div>
 	</article>
 
+	<!-- Playwright -->
+	<article id="Playwright" class="wrapper style3">
+		<div class="container">
+			<header>
+				<h2>Playwright</h2>
+				<p><b></b></p>
+			</header>
+			<div class="row">
+
+				<div class="col-4 col-6-medium col-12-small">
+					<article>
+						<video width="384" height="269" controls poster="images/pw2.webp" class="image featured">
+							<source src="videos/pw1.mp4">
+						</video>
+						<h3>TypeScript</h3>
+						<p><b>Website tests in TypeScript</b></p>
+					</article><br>
+				</div>
+
+				<div class="col-4 col-6-medium col-12-small">
+					<article>
+						<video width="384" height="269" controls poster="images/pwParallel.webp" class="image featured">
+							<source src="videos/pwParallel.mp4">
+						</video>
+						<h3>Parallel Testing</h3>
+						<p><b>Local browser and mobile viewport tests
+								<br><a class="icon brands fa-chrome"></a>
+								&nbsp;<a class="icon brands fa-safari"></a>
+								&nbsp;<a class="icon brands fa-edge"></a>
+								&nbsp;<a class="icon brands fa-firefox-browser"></a></b>
+						</p>
+					</article><br>
+				</div>
+
+				<div class="col-4 col-6-medium col-12-small">
+					<article>
+						<a href="images/pwSharding.webp" class="image featured"><img src="images/pwShardingSmall.webp"
+								alt="Playwright Parallel Sharding" /></a>
+						<h3>Parallel Test Sharding</h3>
+						<p><b>Running parallel browser tests as separate jobs in GitHub Actions and merging the
+								reports</b></p>
+					</article><br>
+				</div>
+
+
+			</div>
+		</div>
+	</article>
+
+	<!-- Selenium -->
+	<article id="Selenium" class="wrapper style3">
+		<div class="container">
+			<header>
+				<h2>Selenium</h2>
+				<p><b></b></p>
+			</header>
+			<div class="row">
+
+				<div class="col-4 col-6-medium col-12-small">
+					<article>
+						<video width="384" height="269" controls poster="images/appTestSmall.webp"
+							class="image featured">
+							<source src="videos/appTest.mp4">
+						</video>
+						<h3>Selenium WebDriver</h3>
+						<p><b>Testing my web app database functions
+								</a></b></p>
+					</article><br>
+				</div>
+
+				<div class="col-4 col-6-medium col-12-small">
+					<article>
+						<video width="384" height="269" controls poster="images/grid1.webp" class="image featured">
+							<source src="videos/grid1.mp4">
+						</video>
+						<h3>Selenium Grid</h3>
+						<p><b>Running tests in a Selenium WebDriver Docker container</b></p>
+					</article><br>
+				</div>
+
+				<div class="col-4 col-6-medium col-12-small">
+					<article>
+						<video width="384" height="269" controls poster="images/pyCharm.webp" class="image featured">
+							<source src="videos/pyCharm.mp4">
+						</video>
+						<h3>PyCharm</h3>
+						<p><b>Python Selenium WebDriver test</b></p>
+					</article><br>
+				</div>
+
+			</div>
+		</div>
+	</article>
 
 	<!-- CICD -->
 	<article id="CICD" class="wrapper style3">
@@ -162,15 +256,14 @@
 			<header>
 				<h2>CI/CD &nbsp;<a class="icon brands fa-git" aria-label="Link to section">
 					</a></h2>
-				<p><b>Source control, automated test workflows, test management & reporting</b></p>
+				<p><b>Source control, automated test workflows, test management, deployment</b></p>
 			</header>
 			<div class="row">
 
 				<div class="col-4 col-6-medium col-12-small">
 					<article>
 						<a href="images/githubActions.webp" class="image featured"><img
-								src="images/githubActionsSmall.webp" width="384" height="269"
-								alt="github actions image" /></a>
+								src="images/githubActionsSmall.webp" alt="github actions image" /></a>
 						<h3>GitHub Actions</h3>
 						<p><b>Cypress, Playwright, JMeter, Postman &amp; other atuomated tests
 								&nbsp;<a href="https://github.com/tjcocker/MyWebsite/actions"
@@ -193,11 +286,12 @@
 
 				<div class="col-4 col-6-medium col-12-small">
 					<article>
-						<a href="images/pwSharding.webp" class="image featured"><img src="images/pwShardingSmall.webp"
-								alt="Playwright Parallel Sharding" /></a>
-						<h3>Playwright Parallel Test Sharding</h3>
-						<p><b>Running parallel browser tests as separate jobs in GitHub Actions and merging the
-								reports</b></p>
+						<a href="images//vercel.webp" class="image featured"><img src="images/vercelSmall.webp"
+								alt="Vercel image" /></a>
+						<h3>Vercel</h3>
+						<p><b>Automatic build and deployment for my web app generated from GitHub
+							</b>
+						</p>
 					</article><br>
 				</div>
 
@@ -206,7 +300,7 @@
 						<a href="images/ld.webp" class="image featured"><img src="images/ldSmall.webp"
 								alt="Launchdeck image" /></a>
 						<h3>Launchdeck</h3>
-						<p><b>A tool for easily publishing all the changes to my hosting provider after each push
+						<p><b>A tool for easily publishing website changes to my hosting provider after each push
 							</b>
 						</p>
 					</article><br>
@@ -218,7 +312,7 @@
 
 
 	<!-- Testing Tools -->
-	<article id="testingtools" class="wrapper style3">
+	<article id="TestingTools" class="wrapper style3">
 		<div class="container">
 			<header>
 				<h2>Other Testing Tools &nbsp;<a class="fa-solid fa-flask">
@@ -226,43 +320,6 @@
 				<p><b>Quick examples of different tools I've used</b></p>
 			</header>
 			<div class="row">
-
-				<div class="col-4 col-6-medium col-12-small">
-					<article>
-						<video width="384" height="269" controls poster="images/appTestSmall.webp"
-							class="image featured">
-							<source src="videos/appTest.mp4">
-						</video>
-						<h3>Selenium WebDriver</h3>
-						<p><b>Testing the web app database functions
-								</a></b></p>
-					</article><br>
-				</div>
-
-				<div class="col-4 col-6-medium col-12-small">
-					<article>
-						<video width="384" height="269" controls poster="images/pw2.webp" class="image featured">
-							<source src="videos/pw1.mp4">
-						</video>
-						<h3>Playwright</h3>
-						<p><b>Website tests in TypeScript</b></p>
-					</article><br>
-				</div>
-
-				<div class="col-4 col-6-medium col-12-small">
-					<article>
-						<video width="384" height="269" controls poster="images/pwParallel.webp" class="image featured">
-							<source src="videos/pwParallel.mp4">
-						</video>
-						<h3>Playwright Parallel Testing</h3>
-						<p><b>Local browser and mobile viewport tests
-								<br><a class="icon brands fa-chrome"></a>
-								&nbsp;<a class="icon brands fa-safari"></a>
-								&nbsp;<a class="icon brands fa-edge"></a>
-								&nbsp;<a class="icon brands fa-firefox-browser"></a></b>
-						</p>
-					</article><br>
-				</div>
 
 				<div class="col-4 col-6-medium col-12-small">
 					<article>
@@ -286,37 +343,17 @@
 
 				<div class="col-4 col-6-medium col-12-small">
 					<article>
-						<video width="384" height="269" controls poster="images/grid1.webp" class="image featured">
-							<source src="videos/grid1.mp4">
-						</video>
-						<h3>Selenium Grid</h3>
-						<p><b>Running tests in a Selenium WebDriver Docker container</b></p>
-					</article><br>
-				</div>
-
-				<div class="col-4 col-6-medium col-12-small">
-					<article>
-						<video width="384" height="269" controls poster="images/pyCharm.webp" class="image featured">
-							<source src="videos/pyCharm.mp4">
-						</video>
-						<h3>PyCharm IDE</h3>
-						<p><b>Selenium WebDriver test on the weather app below</b></p>
-					</article><br>
-				</div>
-
-				<div class="col-4 col-6-medium col-12-small">
-					<article>
 						<a href="images/JMeter.webp" class="image featured"><img src="images/JMeterSmall.webp"
 								alt="JMeter" loading="lazy" /></a>
 						<h3>JMeter</h3>
-						<p><b>Performance testing</b></p>
+						<p><b>Website performance testing</b></p>
 					</article><br>
 				</div>
 
 				<div class="col-4 col-6-medium col-12-small">
 					<article>
 						<video width="384" height="269" controls poster="images/tc1.webp" class="image featured">
-							<source src="videos/tc1.mp4">
+							<source src="videos/tc1.mp4" loading="lazy">
 						</video>
 						<h3>TestComplete</h3>
 						<p><b>A quick script test</b></p>
@@ -326,7 +363,7 @@
 				<div class="col-4 col-6-medium col-12-small">
 					<article>
 						<video width="384" height="269" controls poster="images/k1.webp" class="image featured">
-							<source src="videos/k1.mp4">
+							<source src="videos/k1.mp4" loading="lazy">
 						</video>
 						<h3>Katalon</h3>
 						<p><b>Another quick script test</b></p>
@@ -336,21 +373,14 @@
 				<div class="col-4 col-6-medium col-12-small">
 					<article>
 						<video width="384" height="269" controls poster="images/k6.webp" class="image featured">
-							<source src="videos/k6.mp4">
+							<source src="videos/k6.mp4" loading="lazy">
 						</video>
 						<h3>k6 - Browser test</h3>
-						<p><b>Another example with a different performance testing tool
+						<p><b>Performance testing
 								</a></b></p>
 					</article><br>
 				</div>
 
-				<div class="col-4 col-6-medium col-12-small">
-					<article>
-						<p><br></p>
-						<h3>More coming soon...</h3>
-						<p><b>Most of these are very basic tests for now, this is a work in progess</b></p>
-					</article><br>
-				</div>
 
 			</div>
 		</div>
@@ -363,7 +393,7 @@
 				<h2>JavaScript &nbsp;<a class="icon brands fa-js">
 					</a></h2>
 				<p><b>A few projects for testing</b></p>
-				<hr />
+
 			</header>
 			<div class="row">
 
@@ -432,7 +462,7 @@
 					<article>
 						<a href="images/slotsJS.webp" class="image featured"
 							aria-label="Link to my javascript slot game image"><img src="images/slotsJSs.webp"
-								alt="" /></a>
+								alt="javascript slot game" /></a>
 						<h3>Slot Game</h3>
 						<p><b>A quick tutorial project in Node.js - Just
 								a screenshot of it running in the terminal &nbsp;<a class="icon brands fa-node-js">
@@ -445,7 +475,7 @@
 	</article>
 
 	<!-- Contact -->
-	<article id="contact" class="wrapper style4">
+	<article id="Contact" class="wrapper style4">
 		<div class="container medium">
 			<header>
 				<h2>Contact &nbsp;<a class="icon fa-envelope"></a></h2>
