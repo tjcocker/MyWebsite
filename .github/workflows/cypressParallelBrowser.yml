@@ -1,6 +1,6 @@
 name: Cypress Parallel Browser Tests
 
-on: push
+on: workflow_dispatch
 
 jobs:
   Parallel-Browsers:
