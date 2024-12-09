@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test('test', async ({ page }) => {
+test('Website Test', async ({ page }) => {
   await page.goto('http://tim-cockerham.com/');
   await expect(page.locator('h1')).toContainText('Welcome');
   await expect(page.getByRole('img', { name: 'me and my dog Tony' })).toBeVisible();
