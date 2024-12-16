@@ -45,8 +45,8 @@
 						<h1>Welcome</h1>
 					</header>
 					<p><b><i>This is my portfolio website with examples of testing tools I've used and other things
-								I'm learning</i></b></p>
-					<p><b>My Next.js/React web app:</b>
+								I'm learning. From end-to-end testing to API testing and CI/CD pipelines.</i></b></p>
+					<p><b>Also, I created a Next.js/React web app for learning and testing:</b>
 						<b>&nbsp;<a href="https://nextjs-dashboard-liard-mu-62.vercel.app/" class="icon brands fa-react"
 								alt="React app" aria-label="Link to my React web app"></a></b>
 					</p>
@@ -61,7 +61,7 @@
 		<div class="container">
 			<header>
 				<h2>Cypress</h2>
-				<p><b>Tests on my website &amp; react app</b></p>
+				<p><b></b></p>
 			</header>
 			<div class="row">
 
@@ -69,9 +69,20 @@
 					<article>
 						<a href="images/cypressFixture.webp" class="image featured"><img
 								src="images/cypressFixtureSmall.webp" alt="cypress fixture image" /></a>
-						<h3>Data-Driven</h3>
-						<p><b>Testing a list of cities using a test fixture, for my <a href="#JavaScript">weather
-									app</a> below</b>
+						<h3>Data-Driven Testing with Cypress</h3>
+						<p><b>Using a test fixture to automate testing across multiple cities. For my <a href="#JavaScript">weather
+							app</a> below.</b>
+						</p>
+					</article><br>
+				</div>
+
+				<div class="col-4 col-6-medium col-12-small">
+					<article>
+						<a href="images/cypressIntercept.webp" class="image featured"><img
+								src="images/cypressInterceptSmall.webp" alt="cypress intercept image" /></a>
+						<h3>Stubbing Network Requests</h3>
+						<p><b>Intercepting the weather API request and mocking a response with weather data
+							</b>
 						</p>
 					</article><br>
 				</div>
@@ -82,24 +93,12 @@
 							class="image featured">
 							<source src="videos/cypressAppTest.mp4">
 						</video>
-						<h3>"E2E" testing</h3>
-						<p><b>
+						<h3>Best Practices</h3>
+						<p><b>For Maintainability and Organization:<br>
 								&ast; data attributes for element targeting
 								<br>&ast; custom commands for selectors
-								<br>&ast; tagging for targeted test runs
 								<br>&ast; test isolation
 							</b></p>
-					</article><br>
-				</div>
-
-				<div class="col-4 col-6-medium col-12-small">
-					<article>
-						<a href="images/cypressIntercept.webp" class="image featured"><img
-								src="images/cypressInterceptSmall.webp" alt="cypress intercept image" /></a>
-						<h3>Network requests</h3>
-						<p><b>Intercepting the weather API request and stubbing the response
-							</b>
-						</p>
 					</article><br>
 				</div>
 
@@ -109,12 +108,12 @@
 								src="images/cypressParallelBrowserSmall.webp" alt="other cypress tests image" /></a>
 						<h3>Other testing</h3>
 						<p><b>
-								&upuparrows; Parallel cross-browser
-								<br>&ast; <a href="videos/viewports.mp4">mobile viewport &amp;
-									responsive design</a>
+								&upuparrows; <a href="images/cypressParallelBrowser.webp">Parallel cross-browser:</a> Testing multiple browsers simultaneously
+								<br>&ast; <a href="videos/viewports.mp4">Mobile viewport &amp;
+									responsive design:</a> Testing different screen sizes and mobile orientations
 
-								<br>&ast; <a href="images/visualRegression.webp">visual regression</a>
-								<br>&ast; <a href="images/accessibility.webp">accessibility</a>
+								<br>&ast; <a href="images/visualRegression.webp">Visual regression:</a> Comparing snapshots to test for layout or other visual changes
+								<br>&ast; <a href="images/accessibility.webp">Accessibility:</a> Tests to identify possible issues with screen readers
 
 							</b></p>
 					</article><br>
@@ -126,7 +125,7 @@
 								src="images/taggedGitHubSmall.webp" alt="tagged github actions image" /></a>
 						<h3>Tagged Tests</h3>
 						<p><b>Using tags to run specific tests in GitHub Actions,
-								<a href="images/taggedCLI.webp">or with the CLI</a>
+								<a href="images/taggedCLI.webp">(or with the CLI)</a>. Could be used for staging/dev environments or grouping tests by function, importance, etc
 							</b></p>
 					</article><br>
 				</div>
@@ -136,7 +135,7 @@
 						<a href="images/testRail.webp" class="image featured"><img src="images/testRailSmall.webp"
 								alt="TestRail image" /></a>
 						<h3>TestRail</h3>
-						<p><b>Cypress test results generated from GitHub</b>
+						<p><b>Cypress test results populated into a TestRail project, generated from a GitHub Actions workflow</b>
 						</p>
 					</article><br>
 				</div>
@@ -169,9 +168,9 @@
 					<article>
 						<a href="images/pwDataDriven.webp" class="image featured"><img
 								src="images/pwDataDrivenSmall.webp" alt="Playwright Data-Driven testing" /></a>
-						<h3>Data-Driven</h3>
-						<p><b>Testing a list of cities for my <a href="#JavaScript">weather
-									app</a> below</b></p>
+						<h3>Data-Driven Testing with Playwright</h3>
+						<p><b>Using a test fixture to automate testing across multiple cities. For my <a href="#JavaScript">weather
+							app</a> below.</b></p>
 					</article><br>
 				</div>
 
@@ -181,7 +180,7 @@
 							<source src="videos/pwParallel.mp4">
 						</video>
 						<h3>Parallel Testing</h3>
-						<p><b>Local browser and mobile viewport tests
+						<p><b>Running browser and mobile viewport tests simultaneously to reduce overall testing time
 								<br><a class="icon brands fa-chrome"></a>
 								&nbsp;<a class="icon brands fa-safari"></a>
 								&nbsp;<a class="icon brands fa-edge"></a>
@@ -195,8 +194,7 @@
 						<a href="images/pwSharding.webp" class="image featured"><img src="images/pwShardingSmall.webp"
 								alt="Playwright Parallel Sharding" /></a>
 						<h3>Parallel Test Sharding</h3>
-						<p><b>Running parallel browser tests as separate jobs in GitHub Actions and merging the
-								reports</b></p>
+						<p><b>Splitting tests into smaller groups (shards) and running them simultaneously in Github Actions with multiple runners to reduce overall testing time</b></p>
 					</article><br>
 				</div>
 
@@ -218,9 +216,9 @@
 					<article>
 						<a href="images/seleniumData.webp" class="image featured"><img
 								src="images/seleniumDataSmall.webp" alt="Selenium Data-Driven testing" /></a>
-						<h3>Data-Driven</h3>
-						<p><b>Testing a list of cities for my <a href="#JavaScript">weather
-									app</a> below</b></p>
+						<h3>Data-Driven Testing with Selenium</h3>
+						<p><b>Using a test fixture to automate testing across multiple cities. For my <a href="#JavaScript">weather
+							app</a> below.</b></p>
 					</article><br>
 				</div>
 
@@ -262,7 +260,7 @@
 						<a href="images/githubActions.webp" class="image featured"><img
 								src="images/githubActionsSmall.webp" alt="github actions image" /></a>
 						<h3>GitHub Actions</h3>
-						<p><b>Cypress, Playwright, JMeter, Postman &amp; other atuomated tests
+						<p><b>Cypress, Playwright, JMeter, Postman &amp; other atuomated workflows
 								&nbsp;<a href="https://github.com/tjcocker/MyWebsite/actions"
 									class="icon brands fa-github" aria-label="Link to my GitHub Actions page">
 								</a></b></p>
@@ -286,7 +284,7 @@
 						<a href="images//vercel.webp" class="image featured"><img src="images/vercelSmall.webp"
 								alt="Vercel image" /></a>
 						<h3>Vercel</h3>
-						<p><b>Automatic build and deployment for my web app, generated from GitHub
+						<p><b>Automatic build and deployment for my react web app, generated from GitHub
 							</b>
 						</p>
 					</article><br>
