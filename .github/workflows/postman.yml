@@ -1,6 +1,6 @@
 name: Postman
 
-on: push
+on: workflow_dispatch
 
 jobs:
   automated-api-tests:
