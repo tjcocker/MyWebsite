@@ -23,10 +23,11 @@
 	<nav id="nav">
 		<ul class="container">
 			<li><a href="#top">Home</a></li>
+			<li><a href="#Java">Java</a></li>
 			<li><a href="#Cypress">Cypress</a></li>
 			<li><a href="#Playwright">Playwright</a></li>
-			<li><a href="#Selenium">Selenium</a></li>
 			<li><a href="#CICD">CI/CD</a></li>
+			<li><a href="#Non-Functional">Non-Functional</a></li>
 			<li><a href="#TestingTools">Testing Tools</a></li>
 			<li><a href="#JavaScript">JavaScript</a></li>
 			<li><a href="#Contact">Contact</a></li>
@@ -42,11 +43,10 @@
 				</div>
 				<div class="col-8 col-7-large col-12-medium">
 					<header>
-						<h1>Welcome</h1>
+						<h1>Welcome To My Portfolio</h1>
 					</header>
-					<p><b><i>This is my portfolio website with examples of testing tools I've used and other things
-								I'm learning. From end-to-end testing to API testing and CI/CD pipelines.</i></b></p>
-					<p><b>I also created a Next.js/React web app for learning and testing:</b>
+					<p><b><i>Manual, automated, API, database, and performance testing with CI/CD integration</i></b></p>
+					<p><b>Also, check out my Next.js/React web app:</b>
 						<b>&nbsp;<a href="https://nextjs-dashboard-liard-mu-62.vercel.app/" class="icon brands fa-react"
 								alt="React app" aria-label="Link to my React web app"></a></b>
 					</p>
@@ -56,12 +56,62 @@
 		</div>
 	</article>
 
+	<!-- Java -->
+	<article id="Java" class="wrapper style3">
+		<div class="container">
+			<header>
+				<h2>Java Projects</h2>
+				<!-- <p><b></b></p> -->
+			</header>
+			<div class="row">
+
+				<div class="col-4 col-6-medium col-12-small">
+					<article>
+						<a href="images/grid.webp" class="image featured"><img src="images/gridSmall.webp"
+								alt="Selenium Grid test" /></a>
+						<h3>Selenium</h3>
+						<p><b>UI test automation using Selenium WebDriver with Dockerized Selenium Grid for
+								parallel testing. Uses Page Object Model, dynamic waits, and retry logic to improve
+								test reliability and minimize flakiness:
+								<br><br>Selenium WebDriver/Grid, Docker, JUnit, Allure, SLF4J & Logback
+
+							</b></p>
+					</article><br>
+				</div>
+
+				<div class="col-4 col-6-medium col-12-small">
+					<article>
+						<a href="images/javaAPI.webp" class="image featured"><img src="images/javaAPISmall.webp"
+								alt="Java API testing" /></a>
+						<h3>API Testing</h3>
+						<p><b>This project tests a weather API - it checks temperature data for multiple locations,
+								verifies response structure, headers, and generates detailed reports/logging:
+								<br><br>RestAssured, JUnit, JSON Schema Validation, Allure, SLF4J
+							</b></p>
+					</article><br>
+				</div>
+
+				<div class="col-4 col-6-medium col-12-small">
+					<article>
+						<a href="images/javaDatabasetest.webp" class="image featured"><img
+								src="images/javaDatabasetestSmall.webp" alt="Java database test" /></a>
+						<h3>Database Testing</h3>
+						<p><b>PostgreSQL database testing in a Docker container. Commit and rollback, concurrency
+								testing, various SQL operations, isolation levels, and exception handling:
+								<br><br>JUnit, Testcontainers, JDBC, Docker, SLF4J</b></p>
+					</article><br>
+				</div>
+
+			</div>
+		</div>
+	</article>
+
 	<!-- Cypress -->
 	<article id="Cypress" class="wrapper style3">
 		<div class="container">
 			<header>
 				<h2>Cypress</h2>
-				<p><b>Various tests with Cypress, similiar tests in the Selenium and Playwright sections</b></p>
+				<p><b>JavaScript tests with Cypress</b></p>
 			</header>
 			<div class="row">
 
@@ -70,8 +120,9 @@
 						<a href="images/cypressFixture.webp" class="image featured"><img
 								src="images/cypressFixtureSmall.webp" alt="cypress fixture image" /></a>
 						<h3>Data-Driven Testing</h3>
-						<p><b>Using a test fixture to automate testing across multiple cities. For my <a href="#JavaScript">weather
-							app</a> below.</b>
+						<p><b>Using a test fixture to automate testing across multiple cities, for my <a
+									href="#JavaScript">weather
+									app</a> below</b>
 						</p>
 					</article><br>
 				</div>
@@ -94,12 +145,15 @@
 								src="images/cypressParallelBrowserSmall.webp" alt="other cypress tests image" /></a>
 						<h3>Other testing</h3>
 						<p><b>
-								&upuparrows; <a href="images/cypressParallelBrowser.webp">Parallel cross-browser:</a> Testing multiple browsers simultaneously
+								&upuparrows; <a href="images/cypressParallelBrowser.webp">Parallel cross-browser:</a>
+								Testing multiple browsers simultaneously
 								<br>&ast; <a href="videos/viewports.mp4">Mobile viewport &amp;
 									responsive design:</a> Testing different screen sizes and mobile orientations
 
-								<br>&ast; <a href="images/visualRegression.webp">Visual regression:</a> Comparing snapshots to test for layout or other visual changes
-								<br>&ast; <a href="images/accessibility.webp">Accessibility:</a> Tests to identify possible issues with screen readers
+								<br>&ast; <a href="images/visualRegression.webp">Visual regression:</a> Comparing
+								snapshots to test for layout or other visual changes
+								<br>&ast; <a href="images/accessibility.webp">Accessibility:</a> Tests to identify
+								possible issues with screen readers
 
 							</b></p>
 					</article><br>
@@ -111,21 +165,8 @@
 								src="images/taggedGitHubSmall.webp" alt="tagged github actions image" /></a>
 						<h3>Tagged Tests</h3>
 						<p><b>Using tags to run specific tests in GitHub Actions,
-								<a href="images/taggedCLI.webp">(or with the CLI)</a>. Could be used for staging/dev environments or grouping tests by function, importance, etc
-							</b></p>
-					</article><br>
-				</div>
-
-				<div class="col-4 col-6-medium col-12-small">
-					<article>
-						<video width="384" height="269" controls poster="images/cypressTestSmall.webp"
-							class="image featured">
-							<source src="videos/cypressAppTest.mp4">
-						</video>
-						<h3>Maintainability &amp; Organization</h3>
-						<p><b>&ast; Data attributes for element targeting
-								<br>&ast; Custom commands for selectors
-								<br>&ast; Test isolation
+								<a href="images/taggedCLI.webp">(or with the CLI)</a>. Used for staging/dev
+								environments or grouping tests by function, importance, etc
 							</b></p>
 					</article><br>
 				</div>
@@ -135,7 +176,8 @@
 						<a href="images/testRail.webp" class="image featured"><img src="images/testRailSmall.webp"
 								alt="TestRail image" /></a>
 						<h3>TestRail</h3>
-						<p><b>Cypress test results populated into a TestRail project, generated from a GitHub Actions workflow</b>
+						<p><b>Cypress test results populated into a TestRail project, generated from a GitHub Actions
+								workflow</b>
 						</p>
 					</article><br>
 				</div>
@@ -160,7 +202,7 @@
 		<div class="container">
 			<header>
 				<h2>Playwright</h2>
-				<p><b>Various tests with Playwright, similiar tests in the Selenium and Cypress sections</b></p>
+				<p><b>TypeScript tests with Playwright</b></p>
 			</header>
 			<div class="row">
 
@@ -169,16 +211,16 @@
 						<a href="images/pwDataDriven.webp" class="image featured"><img
 								src="images/pwDataDrivenSmall.webp" alt="Playwright Data-Driven testing" /></a>
 						<h3>Data-Driven Testing</h3>
-						<p><b>Using a test fixture to automate testing across multiple cities. For my <a href="#JavaScript">weather
-							app</a> below.</b></p>
+						<p><b>Using a test fixture in Playwright to automate testing across multiple cities, for my <a
+									href="#JavaScript">weather
+									app</a> below</b></p>
 					</article><br>
 				</div>
 
 				<div class="col-4 col-6-medium col-12-small">
 					<article>
-						<video width="384" height="269" controls poster="images/pwParallel.webp" class="image featured">
-							<source src="videos/pwParallel.mp4">
-						</video>
+						<a href="images/pwParallel.webp" class="image featured"><img
+							src="images/pwParallelSmall.webp" alt="Playwright Parallel testing" /></a>
 						<h3>Parallel Testing</h3>
 						<p><b>Running browser and mobile viewport tests simultaneously to reduce overall testing time
 								<br><a class="icon brands fa-chrome"></a>
@@ -194,7 +236,8 @@
 						<a href="images/pwSharding.webp" class="image featured"><img src="images/pwShardingSmall.webp"
 								alt="Playwright Parallel Sharding" /></a>
 						<h3>Parallel Test Sharding</h3>
-						<p><b>Splitting tests into smaller groups (shards) and running them simultaneously in Github Actions with multiple runners to reduce overall testing time</b></p>
+						<p><b>Splitting tests into smaller groups (shards) and running them simultaneously in Github
+								Actions with multiple runners to reduce overall testing time</b></p>
 					</article><br>
 				</div>
 
@@ -203,47 +246,6 @@
 		</div>
 	</article>
 
-	<!-- Selenium -->
-	<article id="Selenium" class="wrapper style3">
-		<div class="container">
-			<header>
-				<h2>Selenium</h2>
-				<p><b>Various tests with Selenium, similiar tests in the Cypress and Playwright sections</b></p>
-			</header>
-			<div class="row">
-
-				<div class="col-4 col-6-medium col-12-small">
-					<article>
-						<a href="images/seleniumData.webp" class="image featured"><img
-								src="images/seleniumDataSmall.webp" alt="Selenium Data-Driven testing" /></a>
-						<h3>Data-Driven Testing</h3>
-						<p><b>Using a test fixture to automate testing across multiple cities. For my <a href="#JavaScript">weather
-							app</a> below.</b></p>
-					</article><br>
-				</div>
-
-				<div class="col-4 col-6-medium col-12-small">
-					<article>
-						<a href="images/appTest.webp" class="image featured"><img src="images/appTestSmall.webp"
-								alt="Selenium python unittest" /></a>
-						<h3>Selenium Python unittest</h3>
-						<p><b>Testing my web app database functions</b></p>
-					</article><br>
-				</div>
-
-				<div class="col-4 col-6-medium col-12-small">
-					<article>
-						<video width="384" height="269" controls poster="images/grid1.webp" class="image featured">
-							<source src="videos/grid1.mp4">
-						</video>
-						<h3>Selenium Grid</h3>
-						<p><b>Running Selenium WebDriver tests with Docker</b></p>
-					</article><br>
-				</div>
-
-			</div>
-		</div>
-	</article>
 
 	<!-- CICD -->
 	<article id="CICD" class="wrapper style3">
@@ -295,13 +297,55 @@
 	</article>
 
 
+	<!-- Non-Functional Testing -->
+	<article id="Non-Functional" class="wrapper style3">
+		<div class="container">
+			<header>
+				<h2>Non-Functional Testing</h2>
+				<p><b>Performance and Security Testing</b></p>
+			</header>
+			<div class="row">
+				<div class="col-4 col-6-medium col-12-small">
+					<article>
+						<a href="images/JMeter.webp" class="image featured"><img src="images/JMeterSmall.webp"
+								alt="JMeter" loading="lazy" /></a>
+						<h3>JMeter & Grafana</h3>
+						<p><b>Website load test with JMeter (quick test with a very low load). Using Docker to run InfluxDB/Grafana for storing and visualizing real-time performance metrics:
+							<br><br>JMeter, Grafana, InfluxDB, Docker
+						</b></p>
+					</article><br>
+				</div>
+
+				<div class="col-4 col-6-medium col-12-small">
+					<article>
+						<a href="images/k6.webp" class="image featured"><img src="images/k6Small.webp"
+							alt="k6" loading="lazy" /></a>
+						<h3>k6 & Grafana</h3>
+						<p><b>Weather API load test with k6 (quick test with a very low load). Using Docker to run InfluxDB/Grafana:
+							<br><br>k6, Grafana, InfluxDB, Docker</b></p>
+					</article><br>
+				</div>
+
+				<div class="col-4 col-6-medium col-12-small">
+					<article>
+						<a href="images/zap.webp" class="image featured"><img src="images/zapSmall.webp"
+							alt="Security" loading="lazy" /></a>
+						<h3>OWASP ZAP</h3>
+						<p><b>Security scan to check for common vulnerabilities, using ZAP with Java.
+						</b></p>
+					</article><br>
+				</div>
+
+			</div>
+		</div>
+	</article>
+
 	<!-- Testing Tools -->
 	<article id="TestingTools" class="wrapper style3">
 		<div class="container">
 			<header>
-				<h2>Other Testing Tools &nbsp;<a class="fa-solid fa-flask">
-					</a></h2>
-				<p><b>Quick examples of different tools I've used</b></p>
+				<h2>Other Testing Tools</h2>
+				<!-- <p><b></b></p> -->
 			</header>
 			<div class="row">
 
@@ -310,27 +354,7 @@
 						<a href="images/postmanRequest.webp" class="image featured"><img
 								src="images/postmanRequestSmall.webp" alt="postman request image" loading="lazy" /></a>
 						<h3>Postman</h3>
-						<p><b>API test for the weather app below <br>* I also have manual & automated REST API testing
-								experience, including OAuth appliance testing</b></p>
-					</article><br>
-				</div>
-
-				<div class="col-4 col-6-medium col-12-small">
-					<article>
-						<a href="images/PostmanPerformanceTest.webp" class="image featured"><img
-								src="images/PostmanPerformanceTestSmall.webp" alt="postman test image"
-								loading="lazy" /></a>
-						<h3>Postman Performance Test</h3>
-						<p><b>Short example of API performance testing with Postman</b></p>
-					</article><br>
-				</div>
-
-				<div class="col-4 col-6-medium col-12-small">
-					<article>
-						<a href="images/JMeter.webp" class="image featured"><img src="images/JMeterSmall.webp"
-								alt="JMeter" loading="lazy" /></a>
-						<h3>JMeter</h3>
-						<p><b>Website performance testing</b></p>
+						<p><b>API test for the weather app below</b></p>
 					</article><br>
 				</div>
 
@@ -354,21 +378,10 @@
 					</article><br>
 				</div>
 
-				<div class="col-4 col-6-medium col-12-small">
-					<article>
-						<video width="384" height="269" controls poster="images/k6.webp" class="image featured">
-							<source src="videos/k6.mp4" loading="lazy">
-						</video>
-						<h3>k6 - Browser test</h3>
-						<p><b>Performance testing
-								</a></b></p>
-					</article><br>
-				</div>
-
-
 			</div>
 		</div>
 	</article>
+
 
 	<!-- JavaScript -->
 	<article id="JavaScript" class="wrapper style3">
@@ -422,37 +435,6 @@
 					</article><br>
 				</div>
 
-				<div class="col-4 col-6-medium col-12-small">
-					<article>
-						<div id="countdown">
-							<p id="timer"><br>
-								<span id="days"></span>
-								<span class="timer-unit">Days</span><br>
-								<span id="hours"></span>
-								<span class="timer-unit">Hours</span><br>
-								<span id="minutes"></span>
-								<span class="timer-unit">Minutes</span><br>
-								<span id="seconds"></span>
-								<span class="timer-unit">Seconds</span><br>
-							</p>
-						</div>
-						<b>
-							<h3>Live Countdown Timer to 2025</h3>
-						</b>
-					</article><br>
-				</div>
-
-				<div class="col-4 col-6-medium col-12-small">
-					<article>
-						<a href="images/slotsJS.webp" class="image featured"
-							aria-label="Link to my javascript slot game image"><img src="images/slotsJSs.webp"
-								alt="javascript slot game" /></a>
-						<h3>Slot Game</h3>
-						<p><b>A quick tutorial project in Node.js - Just
-								a screenshot of it running in the terminal &nbsp;<a class="icon brands fa-node-js">
-								</a></b></p>
-					</article><br>
-				</div>
 
 			</div>
 		</div>
@@ -480,35 +462,16 @@
 						</p>
 
 						<p>
-							<li><a href="https://github.com/tjcocker/MyWebsite" class="icon brands fa-github"
+							<li><a href="https://github.com/tjcocker/" class="icon brands fa-github"
 									aria-label="Link to my GitHub page"><span class="label">Github</span></a></li>
-							<br>GitHub repo
+							<br>GitHub
 
 						</p>
-						<p>
-							<li><a href="https://bitbucket.org/tim-cockerham/my-website/src/main/README.md"
-									class="icon brands fa-bitbucket" aria-label="Link to my Bitcuket page"><span
-										class="label">Bitbucket</span></a></li><br>Bitbucket&nbsp; &ast;currently
-							inactive
-						</p>
+
 					</ul>
 					<hr />
 				</div>
 			</div>
-		</div>
-	</article>
-
-	<!-- This website is in progress, thank you for visiting -->
-	<article id="inprogress" class="wrapper style1">
-		<div class="container">
-			<header>
-				<h3>Thank you for visiting my website, this is a work in progress.</h3>
-				<br><br><br>
-				<p><a href="404.html"><img src="images/clickhere.webp" class="img2" aria-label="Link to my 404 page"
-							alt="click here" /></a><br><b><i>if
-							you don't think testing
-							is important...</i></b></p>
-			</header>
 		</div>
 	</article>
 
